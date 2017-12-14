@@ -49,7 +49,7 @@ I use several fonts for my custom stylesheet.
 Trivia
 -------------------------------
 
-I decided to name the script <i>Jam-M</i> because <i>3, 2, 1, Let's jam </i>. The <i>M</i> comes from the word Music (because surprise, we listen music on soundcloud), and I used this letter to differenciate it with my previous Soundcloud script called <i>Jam</i>.
+I decided to name the script <i>Jam-M</i> because <i>3, 2, 1, Let's jam</i>. The <i>M</i> comes from the word Music (because surprise, we listen music on soundcloud), and I used this letter to differenciate it with my previous Soundcloud script called <i>Jam</i>.
 
 
 Report
