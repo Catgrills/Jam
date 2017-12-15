@@ -4,20 +4,20 @@
     * {
 	    font-family: "Roboto", "ぼくたちのゴシック２ボールド" !important;
 	}
-	body,
+    body,
     #app {
     	background: #F0F1F5 !important;                                        
     }
-	body {
-		overflow-x: hidden;
-	}
-	.l-fluid-fixed {
+    body {
+	overflow-x: hidden;
+    }
+    .l-fluid-fixed {
         width: 80% !important;
         position: absolute !important;
         left: 0px !important;
         right: 0px !important;
         margin: auto !important;
-	}
+    }
     .l-container.l-content {
         padding-top: 110px !important;
     }
@@ -759,7 +759,7 @@
     .userMain__content .spotlight__item {
         border-radius: 1px !important;
     }
-    .userMain__content .userStreamItem {
+    .userMain__content .sound {
         border-top: 1px solid #EBEBEB !important;
         padding: 30px !important;
         margin-right: -30px !important;
