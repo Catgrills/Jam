@@ -274,11 +274,11 @@
 /* STREAM */
 /** DESCRIPTION : change the elements of the stream page **/
     .stream__header.g-flex-row-centered-spread * {
-        /*** STREAM HEADER ***/
-        font-stretch: condensed !important;
-        font-style: normal !important;
-        font-weight: normal !important;
-        letter-spacing: .1px !important;
+	/*** STREAM HEADER ***/
+	font-stretch: condensed !important;
+	font-style: normal !important;
+	font-weight: normal !important;
+	letter-spacing: .1px !important;
     }
 	.l-tabs {
 		background: rgba(255,255,255,.98) !important;
@@ -299,12 +299,12 @@
 		border: none !important;
 	}
     .l-tabs .streamExploreTabs .g-tabs .g-tabs-link {
-		font-family: "Roboto" !important;
-		font-size: 15pt !important;
-		font-stretch: condensed !important;
+	font-family: "Roboto" !important;
+	font-size: 15pt !important;
+	font-stretch: condensed !important;
         font-weight: normal !important;
     }
-	.l-tabs .streamExploreTabs .g-tabs-link.active,
+    .l-tabs .streamExploreTabs .g-tabs-link.active,
     .l-tabs .streamExploreTabs .g-tabs-link:focus, 
     .l-tabs .streamExploreTabs .g-tabs-link:hover {
         border-color: transparent !important;
@@ -376,6 +376,9 @@
 	.searchList__item .commentPopover {
         /*** STREAM SOUND LIST ITEM VISUALIZER ***/
         display: none !important;
+    }
+    .visualSound__wrapper.g-all-transitions-300 {
+	margin-left: 0px !important;
     }
     .soundList__item .commentForm.commentForm__transition.m-small.visible,
 	.historicalPlays__item .commentForm.commentForm__transition.m-small.visible,
