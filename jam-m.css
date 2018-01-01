@@ -440,7 +440,8 @@
 	}
 	.soundList__item .soundActions__purchaseLink,
 	.historicalPlays__item .soundActions__purchaseLink,
-	.searchList__item .soundActions__purchaseLink {
+	.searchList__item .soundActions__purchaseLink,
+	.commentForm__wrapper.commentForm__transition {
 		display: none !important;
 	}
     .soundList__item .compactTrackList,
