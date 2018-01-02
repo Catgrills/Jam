@@ -444,20 +444,24 @@
 	.commentForm__wrapper.commentForm__transition {
 		display: none !important;
 	}
-    .soundList__item .compactTrackList,
+	.sound__footer.noDivider {
+		position: absolute !important;
+		bottom: -65px !important;
+	}
+    	.soundList__item .compactTrackList,
 	.historicalPlays__item .compactTrackList,
 	.searchList__item .compactTrackList {
         /*** STREAM SOUND LIST COMPACT TRACK LIST ***/
-        border-radius: 1px !important;
-    }
+        	border-radius: 1px !important;
+   	}
 	.compactTrackList.expanded .compactTrackList__listContainer {
 		width: 100% !important;
 	}
-    .soundList__item .compactTrackListItem__plays,
+    	.soundList__item .compactTrackListItem__plays,
 	.historicalPlays__item .compactTrackListItem__plays,
 	.searchList__item .compactTrackListItem__plays {
-        display: none !important;
-    }
+        	display: none !important;
+    	}
     .soundList__item .soundTitle__additionalContainer,
 	.historicalPlays__item .soundTitle__additionalContainer,
 	.searchList__item .soundTitle__additionalContainer{
