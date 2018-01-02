@@ -378,7 +378,7 @@
         display: none !important;
     }
     .visualSound__wrapper.g-all-transitions-300 {
-	margin-left: 0px !important;
+		margin-left: 0px !important;
     }
     .soundList__item .commentForm.commentForm__transition.m-small.visible,
 	.historicalPlays__item .commentForm.commentForm__transition.m-small.visible,
@@ -448,20 +448,20 @@
 		position: absolute !important;
 		bottom: -65px !important;
 	}
-    	.soundList__item .compactTrackList,
+    .soundList__item .compactTrackList,
 	.historicalPlays__item .compactTrackList,
 	.searchList__item .compactTrackList {
         /*** STREAM SOUND LIST COMPACT TRACK LIST ***/
-        	border-radius: 1px !important;
-   	}
+        border-radius: 1px !important;
+    }
 	.compactTrackList.expanded .compactTrackList__listContainer {
 		width: 100% !important;
 	}
-    	.soundList__item .compactTrackListItem__plays,
+    .soundList__item .compactTrackListItem__plays,
 	.historicalPlays__item .compactTrackListItem__plays,
 	.searchList__item .compactTrackListItem__plays {
-        	display: none !important;
-    	}
+        display: none !important;
+    }
     .soundList__item .soundTitle__additionalContainer,
 	.historicalPlays__item .soundTitle__additionalContainer,
 	.searchList__item .soundTitle__additionalContainer{
@@ -822,12 +822,19 @@
 /* TRACK */
 /** DESCRIPTION : change the elements of the track page **/
 	.fullListenHero.fullHero.l-inner-fullwidth,
-	.systemPlaylistHero {
+	.systemPlaylistHero,
+	.listenContent.l-inner-fullwidth.listenContent__sound {
 		/*** TRACK LISTENING HEADER ***/
 		position: absolute !important;
 		left: 30px !important;
 		right: 30px !important;
 		margin-top: -64px !important;
+	}
+	.listenContent.l-inner-fullwidth.listenContent__sound {
+		top: 110px !important;
+	}
+	.listenContent__inner.listenContent__visual {
+		background: transparent !important;
 	}
 	.l-station-hero.l-inner-fullwidth {
 		position: absolute !important;
@@ -854,6 +861,16 @@
 	}
 	.l-station-hero.l-inner-fullwidth .sc-button-small.sc-button-like::before {
 		display: none;
+	}
+	.listenContent.l-inner-fullwidth.listenContent__sound .soundTitle.listenContext .soundTitle__playButton {
+		position: absolute !important;
+		top: 0px !important;
+		right: 0px !important;
+		left: 0px !important;
+		margin: auto !important;
+	}
+	.listenContent.l-inner-fullwidth.listenContent__sound .sc-button-play.playButton.sc-button.m-stretch {
+		background: rgba(252, 185, 65,.98);
 	}
 	.l-listen-hero .soundTitle__playButton.soundTitle__playButtonHero {
 		height: 340px !important;
@@ -886,11 +903,28 @@
 		border-radius: 1px !important;
 		border-color: transparent; 
 	}
+	.listenContent.l-inner-fullwidth.listenContent__sound .soundTitle__titleContainer {
+		width: 100% !important;
+		text-align: center !important;
+		margin-top: 90px !important;
+	}
 	.l-listen-hero .soundTitle__username {
 		border-radius: 2px !important;
 		padding: 8px 14px !important;
 		position: absolute;
 		margin-top: 0px !important;
+	}
+	.listenContent.l-inner-fullwidth.listenContent__sound .soundTitle__username {
+		border-radius: 2px !important;
+		padding: 8px 14px !important;
+		max-width: 100px !important;
+		position: absolute !important;
+		left: 0px !important;
+		right: 0px !important;
+		margin: 0px auto !important;
+		overflow: hidden !important;
+		text-overflow: ellipsis !important;
+		white-space: nowrap !important;
 	}
 	.systemPlaylistHero .fullHero__titleTextLineSmall span {
 		border-radius: 2px !important;
@@ -905,6 +939,18 @@
 		position: absolute !important;
 		margin-top: 40px !important;
 		max-width: 600px !important;
+		overflow: hidden !important;
+		text-overflow: ellipsis !important;
+		white-space: nowrap !important;
+	}
+	.listenContent.l-inner-fullwidth.listenContent__sound .soundTitle__title {
+		border-radius: 2px !important;
+		padding: 12px 20px !important;
+		max-width: 300px !important;
+		position: absolute !important;
+		left: 0px !important;
+		right: 0px !important;
+		margin: 40px auto !important;
 		overflow: hidden !important;
 		text-overflow: ellipsis !important;
 		white-space: nowrap !important;
@@ -946,6 +992,12 @@
 		margin-right: 30px !important;
 		margin-bottom: 30px !important;
 	}
+	.l-three-column.listen-about {
+		padding: 30px !important;
+		margin-top: 350px !important;
+		margin-right: 30px !important;
+		margin-bottom: 30px !important;
+	}
 	.l-main.l-station-main {
 		margin-top: 540px !important;
 	}
@@ -966,12 +1018,22 @@
 		font-weight: bold !important;
 		margin-bottom: 2px !important;
 	}
+	.listenContent.l-inner-fullwidth.listenContent__sound .soundTitle__additionalContainer {
+		position: absolute !important;
+		top: 0px !important;
+		right: 0px !important;
+	}
 	.l-hero-content .l-main.sc-border-light-right {
 		/*** TRACK PLAYLIST MAIN CONTAINER ***/
 		background: #FFF !important;
 		box-shadow: 0px 1px 2px rgba(0,0,0,.1) !important;
 		padding: 40px !important;
 		margin-top: 370px !important;
+	}
+	.l-three-column.listen-about .l-main.sc-border-light-right {
+		background: #FFF !important;
+		box-shadow: 0px 1px 2px rgba(0,0,0,.1) !important;
+		padding: 40px !important;
 	}
 	.l-hero-content .l-main {
 		background: #FFF !important;
@@ -1178,7 +1240,8 @@
 	.trackItem__additional {
 		display: none !important;
 	}
-	.l-listen-wrapper .commentsList.g-box-full.lazyLoadingList {
+	.l-listen-wrapper .commentsList.g-box-full.lazyLoadingList,
+	.l-three-column .commentsList.g-box-full.lazyLoadingList {
 		/*** TRACK MAIN CONTAINER DESCRIPTION ROW COMMENTS ***/
 		background: #FFF !important;
 		border: 1px solid #EBEBEB;
@@ -1187,43 +1250,52 @@
 		margin-top: 54px !important;
 		width: auto !important;
 	}
-	.l-listen-wrapper .commentsList .sc-clearfix {
+	.l-listen-wrapper .commentsList .sc-clearfix, 
+	.l-three-column .commentsList .sc-clearfix {
 		padding: 0px 20px 15px 20px !important;
 		margin-top: -10px !important;
 		margin-right: -30px !important;
 		margin-left: -30px !important;
 		margin-bottom: 20px !important;
 	}
-	.l-listen-wrapper .commentsList .sc-clearfix .commentsList__actualTitle {
+	.l-listen-wrapper .commentsList .sc-clearfix .commentsList__actualTitle,
+	.l-three-column .commentsList .sc-clearfix .commentsList__actualTitle {
 		font-size: 12pt !important;
 		font-stretch: condensed !important;
 		margin-bottom: 20px !important;
 	}
-	.l-listen-wrapper .commentItem.m-creatorComment {
+	.l-listen-wrapper .commentItem.m-creatorComment,
+	.l-three-column .commentItem.m-creatorComment {
 		border-radius: 2px !important;
 		margin-bottom: 20px !important;
 	}
-	.l-listen-wrapper .commentsList .commentItem.m-isReply {
+	.l-listen-wrapper .commentsList .commentItem.m-isReply,
+	.l-three-column .commentsList .commentItem.m-isReply {
 		border-left: 2px solid #EBEBEB !important;
 		padding-left: 20px !important;
 	}
-	.l-listen-wrapper .commentsList .commentItem.m-isReply.m-creatorComment {
+	.l-listen-wrapper .commentsList .commentItem.m-isReply.m-creatorComment,
+	.l-three-column .commentsList .commentItem.m-isReply.m-creatorComment {
 		background: transparent !important;
 		border-left: 2px solid #F29B34 !important;
 		margin-left: 20px !important;
 	}
-	.l-listen-wrapper .commentsList .sc-clearfix .sc-icon {
+	.l-listen-wrapper .commentsList .sc-clearfix .sc-icon,
+	.l-three-column .commentsList .sc-clearfix .sc-icon {
 		display: none !important;
 	}
-	.l-listen-wrapper .commentsList .commentsList__item .commentItem__avatar .sc-artwork {
+	.l-listen-wrapper .commentsList .commentsList__item .commentItem__avatar .sc-artwork,
+	.l-three-column .commentsList .commentsList__item .commentItem__avatar .sc-artwork {
 		border: none !important;
 		border-radius: 2px !important;
 		box-shadow: 0px 1px 2px rgba(0,0,0,.1) !important;
 	}
-	.l-listen-wrapper .commentsList .commentItem__content * {
+	.l-listen-wrapper .commentsList .commentItem__content *,
+	.l-three-column .commentsList .commentItem__content * {
 		font-size: 11pt !important;
 	}
-	.l-listen-wrapper .commentsList .commentItem__createdAt.sc-text-light {
+	.l-listen-wrapper .commentsList .commentItem__createdAt.sc-text-light,
+	.l-three-column .commentsList .commentItem__createdAt.sc-text-light {
 		font-size: 12.5pt !important;
 		font-stretch: condensed !important;
 	}
@@ -1244,6 +1316,53 @@
 	}
 	.sc-button-small.sc-button-reply::before {
 		display: none !important;
+	}
+	.l-three-column.listen-about .listenNetworkSidebar {
+		/*** TRACK SIDEBAR ***/
+		margin-top: -47px !important;
+	}
+	.l-three-column.listen-about .listenInfo {
+		background: #FFF !important;
+		box-shadow: 0px 1px 2px rgba(0,0,0,.1) !important;
+		padding: 20px !important;
+		width: 100% !important;
+	}
+	.l-three-column.listen-about .listenInfo .listenInfo__copyright,
+	.l-three-column.listen-about .listenInfo .listenInfo__releaseTitle {
+		display: none;
+	}
+	.l-three-column.listen-about .listenInfo .listenInfo__releaseData {
+		font-size: 12pt !important;
+		font-stretch: condensed !important;
+		text-align: center !important;
+		text-transform: uppercase !important;
+		margin-top: 10px !important;
+	}
+	.l-three-column.listen-about .sc-border-light-bottom.listenNetworkSidebar__creator {
+		background: #FFF !important;
+		box-shadow: 0px 1px 2px rgba(0,0,0,.1) !important;
+		padding: 20px !important;
+	}
+	.l-three-column.listen-about .sc-clearfix.sc-type-light.sc-truncate {
+		width: 100% !important;
+		position: absolute !important;
+		margin-top: -3px !important;
+	}
+	.l-three-column.listen-about .sc-ministats-group {
+    	display: none !important;
+	}
+	.l-three-column.listen-about .sc-button-follow {
+		background: #FF9F55 !important;
+		border: none !important;
+		border-radius: 2px !important;
+		color: #FFF !important;
+		font-size: 10.5pt !important;
+		font-stretch: condensed !important;
+		font-weight: bold !important;
+		height: 29px !important;
+		width: 64px !important;
+		text-transform: uppercase !important;
+		margin-top: -10px !important;	
 	}
 	
 /* SEARCH */
