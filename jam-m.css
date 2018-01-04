@@ -275,10 +275,10 @@
 /** DESCRIPTION : change the elements of the stream page **/
     .stream__header.g-flex-row-centered-spread * {
 	/*** STREAM HEADER ***/
-	font-stretch: condensed !important;
-	font-style: normal !important;
-	font-weight: normal !important;
-	letter-spacing: .1px !important;
+		font-stretch: condensed !important;
+		font-style: normal !important;
+		font-weight: normal !important;
+		letter-spacing: .1px !important;
     }
 	.l-tabs {
 		background: rgba(255,255,255,.98) !important;
