@@ -275,10 +275,10 @@
 /** DESCRIPTION : change the elements of the stream page **/
     .stream__header.g-flex-row-centered-spread * {
 	/*** STREAM HEADER ***/
-		font-stretch: condensed !important;
-		font-style: normal !important;
-		font-weight: normal !important;
-		letter-spacing: .1px !important;
+	font-stretch: condensed !important;
+	font-style: normal !important;
+	font-weight: normal !important;
+	letter-spacing: .1px !important;
     }
 	.l-tabs {
 		background: rgba(255,255,255,.98) !important;
@@ -441,7 +441,9 @@
 	.soundList__item .soundActions__purchaseLink,
 	.historicalPlays__item .soundActions__purchaseLink,
 	.searchList__item .soundActions__purchaseLink,
-	.commentForm__wrapper.commentForm__transition {
+	.soundList__item .commentForm__wrapper.commentForm__transition,
+	.historicalPlays__item .commentForm__wrapper.commentForm__transition,
+	.searchList__item .commentForm__wrapper.commentForm__transition	{
 		display: none !important;
 	}
 	.sound__footer.noDivider {
