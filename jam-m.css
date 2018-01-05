@@ -22,26 +22,26 @@
         padding-top: 110px !important;
     }
     .dashbox__wrapper,
-	.l-footer,
-	.paging-eof,
-	.image.m-station::before,
-	.listenArtistInfo__copyright,
-	.truncatedAudioInfo__license,
-	.l-main .userNetwork .sc-button-share,
-	.profileMenu__link.profileMenu__premium,
-	.creatorsNavigation__onSoundCloud {
+    .l-footer,
+    .paging-eof,
+    .image.m-station::before, 
+    .listenArtistInfo__copyright,
+    .truncatedAudioInfo__license,
+    .l-main .userNetwork .sc-button-share,
+    .profileMenu__link.profileMenu__premium,
+    .creatorsNavigation__onSoundCloud {
         display: none !important;
     }
 	
 /* HEADER */
 /** DESCRIPTION : change the elements of the header **/
-	.header {
-		/*** HEADER CONTAINER ***/
-		background: #FCA65F !important;
-	}
-	.header__logo {
-		background: #EB6361 !important;
-	}
+     .header {
+	/*** HEADER CONTAINER ***/
+	    background: #FCA65F !important;
+    }
+    .header__logo {
+	    background: #EB6361 !important;
+    }
 	.header li a {
 		/*** HEADER LINKS ***/
 		color: #FFF !important;
