@@ -76,8 +76,16 @@
 		text-transform: uppercase;
 	}
 
-	.header__mainMenu-loggedInHome {
+	.left.header__navWrapper * {
+		font-size: 11pt !important;
+		font-stretch: condensed !important;
+		font-weight: bold !important;
+		text-transform: uppercase !important;
+	}
+
+	.header__collection-wrapper {
 		background: #0C545C !important;
+		margin-right: -1px !important;
 	}
 
 	.header__link.header__goUpsell {
