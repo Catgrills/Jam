@@ -1,6 +1,5 @@
 @-moz-document domain("soundcloud.com") {
-
-	/* GENERAL */
+/* GENERAL */
 
 	/** DESCRIPTION : change the elements of all page **/
 	* {
@@ -1145,6 +1144,7 @@
 
 	.l-listen-hero .soundTitle__username {
 		border-radius: 2px !important;
+        font-weight: normal !important;
 		padding: 8px 14px !important;
 		position: absolute;
 		margin-top: 0px !important;
@@ -1450,6 +1450,10 @@
 		margin-top: 30px !important;
 	}
 
+	.truncatedAudioInfo__content .sc-type-small {
+    	font-weight: normal !important;
+	}
+
 	.l-listen-wrapper .l-about-row .userBadge__actions .sc-button-follow {
 		background: #FF9F55 !important;
 		border: none !important;
@@ -1477,6 +1481,7 @@
 	.l-listen-wrapper .userBadge__title .sc-truncate {
 		font-size: 12pt !important;
 		font-stretch: condensed !important;
+    	font-weight: normal !important;
 		margin-top: 20px !important;
 	}
 
@@ -1957,6 +1962,10 @@
 		margin-left: -200px !important;
 	}
 
+	.fullHero__uploadTime {
+    	font-weight: normal !important;                                        
+    }
+
 	.l-collection .sound__footerRight {
 		display: none !important;
 	}
@@ -2193,12 +2202,10 @@
 	.l-messages-left .inbox__item::before {
 		display: none !important;
 	}
-
 }
 
 @-moz-document regexp("https://soundcloud.com/notifications.*") {
-
-	/* NOTIFICATION */
+/* NOTIFICATION */
 
 	/** DESCRIPTION : change the elements of the notification page **/
 	.l-fluid-fixed .l-main h1 {
@@ -2288,6 +2295,4 @@
 		background: transparent !important;
 		border: none !important;
 	}
-
 }
-
