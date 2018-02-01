@@ -109,6 +109,7 @@
 		border-radius: 1px !important;
 		font-stretch: condensed !important;
 		font-size: 12pt !important;
+        font-weight: normal !important;
 	}
 
 	.newItemBadge.newItems__some {
@@ -120,6 +121,10 @@
 		padding: 5px !important;
 		margin-bottom: -10px !important;
 	}
+
+	.autocompleteItem__title {
+        font-weight: normal !important;
+    }
 
 	.autocompleteItem__queryIcon {
 		display: none !important;
@@ -355,7 +360,8 @@
 	/* STREAM */
 
 	/** DESCRIPTION : change the elements of the stream page **/
-	.stream__header.g-flex-row-centered-spread * {
+	.stream__header.g-flex-row-centered-spread *,
+	.userNetwork__subheadline {
 
 		/*** STREAM HEADER ***/
 		font-size: 15pt !important;
@@ -770,6 +776,7 @@
 	.chartsMain__tagline {
 		font-size: 15pt !important;
 		font-stretch: condensed !important;
+        font-weight: normal !important;
 		margin-bottom: 20px !important;
 	}
 
@@ -805,6 +812,11 @@
 
 	.selectionModule__description.sc-type-small.sc-type-light {
 		font-size: 12pt !important;
+		font-weight: normal !important;
+	}
+
+	.playableTile__mainHeading {
+    	font-weight: normal !important;
 	}
 
 	.selectionPlaylists {
@@ -1226,6 +1238,10 @@
 		padding: 5px 10px !important;
 	}
 
+	.l-listen-hero .sc-tag * {
+    	font-weight: normal !important;                                        
+    }
+
 	.l-listen-wrapper .l-about-rows {
 
 		/*** TRACK MAIN CONTAINER ***/
@@ -1524,6 +1540,10 @@
 		border: 1px solid #EBEBEB !important;
 	}
 
+	.l-listen-wrapper .listenDetails__trackList .trackItem * {
+    	font-weight: normal !important;
+	}
+
 	.l-listen-wrapper .listenDetails__trackList .sc-border-light-bottom {
 		border-bottom: 1px solid #f2f2f2;
 		padding: 3px 10px !important;
@@ -1707,7 +1727,7 @@
 		left: 0px !important;
 	}
 
-	.soundTitle.streamContext .soundTitle__title {
+	.soundTitle__title {
     	font-weight: normal !important;                                        
     }
 
@@ -2000,9 +2020,9 @@
 		font-weight: normal !important;
 	}
 
-	.l-collection .playableTile__descriptionContainer *,
-	.l-collection .playableTile__usernameHeadingContainer *,
-	.l-collection .userBadgeListItem__heading {
+	.playableTile__descriptionContainer *,
+	.playableTile__usernameHeadingContainer *,
+	.userBadgeListItem__heading {
 		font-weight: normal !important;
 	}
 
@@ -2308,4 +2328,10 @@
 		background: transparent !important;
 		border: none !important;
 	}
+}
+
+@-moz-document url("https://soundcloud.com/charts/top") {
+* {
+	font-weight: normal;
+}
 }
