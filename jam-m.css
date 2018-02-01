@@ -59,6 +59,10 @@
 		color: #FFF !important;
 	}
 
+	.header__navMenu > li > a {
+		border-right: none !important;
+	}
+
 	.header__navMenu > li > a.selected,
 	.uploadButton.selected {
 		background: transparent;
@@ -355,6 +359,7 @@
 	.stream__header.g-flex-row-centered-spread * {
 
 		/*** STREAM HEADER ***/
+		font-size: 15pt !important;
 		font-stretch: condensed !important;
 		font-style: normal !important;
 		font-weight: normal !important;
@@ -434,6 +439,10 @@
 	.soundList__item .soundContext .soundContext__line.sc-font-body * {
 		font-size: 10.5pt !important;
 		font-weight: normal !important;
+	}
+
+	.soundTitle__usernameText {
+		font-size: 11pt !important;
 	}
 
 	.soundList__item .sound__content,
@@ -572,6 +581,11 @@
 		border-radius: 1px !important;
 	}
 
+	.compactTrackListItem * {
+		font-size: 12pt !important;
+		font-stretch: condensed !important;
+	}
+
 	.compactTrackList.expanded .compactTrackList__listContainer {
 		width: 100% !important;
 	}
@@ -580,6 +594,13 @@
 	.historicalPlays__item .compactTrackListItem__plays,
 	.searchList__item .compactTrackListItem__plays {
 		display: none !important;
+	}
+
+	.compactTrackList__moreLink {
+		font-size: 11pt !important;
+		font-stretch: condensed;
+		font-weight: normal !important;
+		text-transform: uppercase !important;
 	}
 
 	.soundList__item .soundTitle__additionalContainer,
@@ -591,7 +612,7 @@
 		letter-spacing: .1px !important;
 		text-transform: uppercase !important;
 		position: absolute !important;
-		margin-top: -88px !important;
+		margin-top: -91px !important;
 		right: -10px !important;
 	}
 
@@ -601,14 +622,14 @@
 		background: #3C3741 !important;
 		border: transparent !important;
 		border-radius: 2px !important;
-		font-size: 10.5pt !important;
+		font-size: 11pt !important;
 		font-weight: bold !important;
 		padding: 5px 10px !important;
 	}
 
 	.soundList__item .soundTitle__tag.sc-tag.sc-tag-small,
 	.searchList__item .soundTitle__tag.sc-tag.sc-tag-small {
-		padding: 5px 10px 7px 10px !important;
+		padding: 8px 12px 9px 12px !important;
 	}
 
 	.sc-snippet-badge.sc-snippet-badge-medium.sc-snippet-badge-grey {
@@ -747,7 +768,7 @@
 	}
 
 	.chartsMain__tagline {
-		font-size: 14pt !important;
+		font-size: 15pt !important;
 		font-stretch: condensed !important;
 		margin-bottom: 20px !important;
 	}
@@ -2269,3 +2290,4 @@
 	}
 
 }
+
