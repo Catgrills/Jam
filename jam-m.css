@@ -442,6 +442,7 @@
 
 	.soundTitle__usernameText {
 		font-size: 11pt !important;
+        font-weight: normal !important;
 	}
 
 	.soundList__item .sound__content,
@@ -1706,6 +1707,10 @@
 		left: 0px !important;
 	}
 
+	.soundTitle.streamContext .soundTitle__title {
+    	font-weight: normal !important;                                        
+    }
+
 	.l-search .searchTitle .searchTitle__text {
 		border-bottom: none !important;
 		font-size: 15pt !important;
@@ -1735,6 +1740,10 @@
 		top: -70px !important;
 		right: 0px !important;
 		left: 0px !important;
+	}
+
+	.userItem__details.sc-type-light {
+    	font-weight: normal !important;
 	}
 
 	.l-search .userItem__coverArt {
@@ -1786,6 +1795,10 @@
 		text-shadow: none !important;
 	}
 
+	.searchOptions__navigationItem {
+        font-size: 13pt !important;
+    	font-stretch: condensed;                                        
+    }
 	.l-search .l-fixed-left .g-nav-item > .g-nav-link {
 		padding-left: 0px !important;
 	}
