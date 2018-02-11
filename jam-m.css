@@ -1,5 +1,6 @@
 @-moz-document domain("soundcloud.com") {
-/* GENERAL */
+
+	/* GENERAL */
 
 	/** DESCRIPTION : change the elements of all page **/
 	* {
@@ -27,15 +28,19 @@
 		padding-top: 110px !important;
 	}
 
+	.creatorsNavigation__onSoundCloud,
 	.dashbox__wrapper,
-	.l-footer,
-	.paging-eof,
 	.image.m-station::before,
+	.l-footer,
 	.listenArtistInfo__copyright,
-	.truncatedAudioInfo__license,
 	.l-main .userNetwork .sc-button-share,
+	.paging-eof,
+	.premiumIconLink,
 	.profileMenu__link.profileMenu__premium,
-	.creatorsNavigation__onSoundCloud {
+	.sc-promoted-icon,
+	.sc-tag::before,
+	.tagsMain .tabs__tabs,
+	.truncatedAudioInfo__license {
 		display: none !important;
 	}
 
@@ -73,14 +78,14 @@
 	.userNav__username.sc-truncate {
 		color: #FFF;
 		border-right: none !important;
-		font-size: 11pt !important;
+		font-size: 12pt !important;
 		font-stretch: condensed !important;
 		font-weight: bold;
 		text-transform: uppercase;
 	}
 
 	.left.header__navWrapper * {
-		font-size: 11pt !important;
+		font-size: 12pt !important;
 		font-stretch: condensed !important;
 		font-weight: bold !important;
 		text-transform: uppercase !important;
@@ -88,6 +93,8 @@
 
 	.header__collection-wrapper {
 		background: #0C545C !important;
+		padding-left: 10px !important;
+		padding-right: 10px !important;
 		margin-right: -1px !important;
 	}
 
@@ -108,8 +115,8 @@
 		background: inherit !important;
 		border-radius: 1px !important;
 		font-stretch: condensed !important;
-		font-size: 12pt !important;
-        font-weight: normal !important;
+		font-size: 14pt !important;
+		font-weight: normal !important;
 	}
 
 	.newItemBadge.newItems__some {
@@ -123,15 +130,15 @@
 	}
 
 	.autocompleteItem__title {
-        font-weight: normal !important;
-    }
+		font-weight: normal !important;
+	}
 
 	.autocompleteItem__queryIcon {
 		display: none !important;
 	}
 
 	.searchMenu__searchForText {
-		font-size: 12pt !important;
+		font-size: 14pt !important;
 		font-stretch: condensed !important;
 	}
 
@@ -207,7 +214,7 @@
 	}
 
 	.g-dark-bg .ownActivity__content * {
-		font-size: 10.5pt !important;
+		font-size: 12pt !important;
 	}
 
 	.g-dark .ownActivity .ownActivity__time {
@@ -333,7 +340,11 @@
 	.playbackSoundBadge__titleContextContainer a {
 		font-size: 11pt !important;
 		font-stretch: condensed !important;
+		max-width: 100% !important;
+		overflow: hidden !important;
+		text-overflow: ellipsis !important;
 		text-transform: lowercase !important;
+		white-space: nowrap !important;
 	}
 
 	.playbackSoundBadge__titleLink,
@@ -361,10 +372,12 @@
 
 	/** DESCRIPTION : change the elements of the stream page **/
 	.stream__header.g-flex-row-centered-spread *,
-	.userNetwork__subheadline {
+	.userNetwork__subheadline,
+	.relatedList__explanation,
+	.tagsMain__title {
 
 		/*** STREAM HEADER ***/
-		font-size: 15pt !important;
+		font-size: 17pt !important;
 		font-stretch: condensed !important;
 		font-style: normal !important;
 		font-weight: normal !important;
@@ -394,7 +407,7 @@
 
 	.l-tabs .streamExploreTabs .g-tabs .g-tabs-link {
 		font-family: "Roboto" !important;
-		font-size: 15pt !important;
+		font-size: 17pt !important;
 		font-stretch: condensed !important;
 		font-weight: normal !important;
 	}
@@ -429,7 +442,7 @@
 
 	.soundList__item .soundContext__line {
 		background-image: none !important;
-		font-size: 10.5pt !important;
+		font-size: 12pt !important;
 		line-height: 28px !important;
 	}
 
@@ -442,13 +455,14 @@
 	}
 
 	.soundList__item .soundContext .soundContext__line.sc-font-body * {
-		font-size: 10.5pt !important;
+		font-size: 12pt !important;
 		font-weight: normal !important;
 	}
 
-	.soundTitle__usernameText {
-		font-size: 11pt !important;
-        font-weight: normal !important;
+	.soundTitle__usernameText,
+	.actorUser__username {
+		font-size: 12pt !important;
+		font-weight: normal !important;
 	}
 
 	.soundList__item .sound__content,
@@ -479,6 +493,16 @@
 
 	.soundList__item .soundTitle__usernameTitleContainer * {
 		font-weight: normal !important;
+	}
+
+	.soundTitle__username span {
+		font-size: 12pt !important;
+	}
+
+	.soundTitle .soundTitle__title {
+		font-size: 12pt !important;
+		min-height: 30px !important;
+		line-height: 25pt !important;
 	}
 
 	.soundList__item .waveform__scene.waveform__layer canvas:nth-child(2),
@@ -513,14 +537,14 @@
 		border: none !important;
 		border-radius: 2px !important;
 		color: #FFF !important;
-		font-size: 10.5pt !important;
+		font-size: 12pt !important;
 		font-stretch: condensed !important;
 		font-weight: bold !important;
 		line-height: 7.5px !important;
-		height: 35px !important;
+		height: 38px !important;
 		min-width: 45px !important;
-		padding-right: 10px;
-		padding-left: 10px;
+		padding-right: 15px;
+		padding-left: 15px;
 		text-indent: 0px !important;
 		text-transform: uppercase !important;
 		margin-right: 6px !important;
@@ -589,7 +613,6 @@
 
 	.compactTrackListItem * {
 		font-size: 12pt !important;
-		font-stretch: condensed !important;
 	}
 
 	.compactTrackList.expanded .compactTrackList__listContainer {
@@ -630,11 +653,6 @@
 		border-radius: 2px !important;
 		font-size: 11pt !important;
 		font-weight: bold !important;
-		padding: 5px 10px !important;
-	}
-
-	.soundList__item .soundTitle__tag.sc-tag.sc-tag-small,
-	.searchList__item .soundTitle__tag.sc-tag.sc-tag-small {
 		padding: 8px 12px 9px 12px !important;
 	}
 
@@ -682,7 +700,7 @@
 	}
 
 	.l-sidebar-right .sidebarModule .sidebarHeader .sidebarHeader__title {
-		font-size: 12pt !important;
+		font-size: 14pt !important;
 		font-stretch: condensed !important;
 		font-weight: normal !important;
 	}
@@ -715,6 +733,7 @@
 	}
 
 	.l-sidebar-right .sidebarModule .userBadge__usernameLink {
+		font-size: 12pt !important;
 		margin-top: 11px !important;
 		margin-left: 5px !important;
 	}
@@ -724,13 +743,15 @@
 		border: none !important;
 		border-radius: 2px !important;
 		color: #FFF !important;
-		font-size: 10.5pt !important;
+		font-size: 12pt !important;
 		font-stretch: condensed !important;
 		font-weight: bold !important;
-		height: 29px !important;
+		height: 34px !important;
 		width: auto !important;
+		padding-right: 15px !important;
+		padding-left: 15px !important;
 		text-transform: uppercase !important;
-		margin-top: -6px !important;
+		margin-top: 0px !important;
 	}
 
 	.l-sidebar-right .sidebarModule .soundBadge__artwork .sc-artwork {
@@ -776,7 +797,7 @@
 	.chartsMain__tagline {
 		font-size: 15pt !important;
 		font-stretch: condensed !important;
-        font-weight: normal !important;
+		font-weight: normal !important;
 		margin-bottom: 20px !important;
 	}
 
@@ -816,7 +837,7 @@
 	}
 
 	.playableTile__mainHeading {
-    	font-weight: normal !important;
+		font-weight: normal !important;
 	}
 
 	.selectionPlaylists {
@@ -847,7 +868,7 @@
 
 	.l-vertical-bar .userInfoBar .g-tabs {
 		border-bottom: none;
-		font-size: 15pt !important;
+		font-size: 17pt !important;
 		font-stretch: condensed !important;
 	}
 
@@ -857,20 +878,26 @@
 	}
 
 	.l-vertical-bar .userInfoBar__buttons {
-		right: 19px !important;
-		bottom: 19px !important;
+		right: 22px !important;
+		bottom: 22px !important;
 	}
 
 	.l-vertical-bar .sc-button-medium {
 		border-radius: 2px !important;
+		font-size: 12pt !important;
 		font-stretch: condensed !important;
 		font-weight: bold !important;
+		width: 100px !important;
+		text-align: center !important;
 		text-indent: 0px !important;
 		text-transform: uppercase !important;
+		margin-right: 8px !important;
+		margin-bottom: -4px !important;
 	}
 
 	.l-vertical-bar .sc-button {
-		line-height: 18px !important;
+		height: 32px !important;
+		line-height: 27px !important;
 	}
 
 	.l-vertical-bar .sc-button-startstation,
@@ -908,6 +935,20 @@
 		background: #D4D4D4 !important;
 		border: 1px solid transparent;
 		color: #FFF;
+		padding-bottom: 8px !important;
+	}
+
+	.l-vertical-bar .sc-button-message {
+		background: #2CC990 !important;
+		border: 1px solid transparent !important;
+		color: #FFF !important;
+		padding-bottom: 8px !important;
+	}
+
+	.l-vertical-bar .sc-button-startstation {
+		background: #E26E67 !important;
+		border: 1px solid transparent !important;
+		color: #FFF !important;
 		padding-bottom: 8px !important;
 	}
 
@@ -980,7 +1021,7 @@
 	.spotlightTitle,
 	.spotlight__recent {
 		color: #7E7E7E !important;
-		font-size: 14pt !important;
+		font-size: 17pt !important;
 		font-stretch: condensed !important;
 	}
 
@@ -1000,9 +1041,9 @@
 	}
 
 	.userMain__content .soundTitle__uploadTime {
-		font-size: 10.5pt !important;
+		font-size: 12pt !important;
 		font-weight: bold !important;
-		line-height: 31px;
+		line-height: 35px;
 		position: absolute !important;
 		margin-left: -200px !important;
 	}
@@ -1028,12 +1069,16 @@
 	}
 
 	.userSidebar .infoStats .infoStats__title {
-		font-size: 11pt !important;
+		font-size: 14pt !important;
 	}
 
 	.userSidebar .infoStats .truncatedUserDescription__content,
 	.userSidebar .infoStats .web-profiles {
-		font-size: 10pt !important;
+		font-size: 12pt !important;
+	}
+
+	.userSidebar .sc-social-logo {
+		margin-top: 4px !important;
 	}
 
 	.userSidebar .commentBadgeList .commentBadgeList__item {
@@ -1042,12 +1087,13 @@
 		margin-left: -23px !important;
 	}
 
-	.userSidebar .commentBadgeList .commentBadge__title {
-		font-size: 10.5pt !important;
+	.userSidebar .commentBadgeList .commentBadge__title,
+	.userSidebar .relativeTime {
+		font-size: 12pt !important;
 	}
 
 	.userSidebar .commentBadgeList .commentBadge__body {
-		font-size: 10.5pt !important;
+		font-size: 12pt !important;
 		margin-top: 10px !important;
 	}
 
@@ -1085,7 +1131,7 @@
 		border: none !important;
 		border-radius: 2px !important;
 		color: #FFF !important;
-		font-size: 10.5pt !important;
+		font-size: 12pt !important;
 		font-stretch: condensed !important;
 		font-weight: bold !important;
 		line-height: 7.5px !important;
@@ -1157,7 +1203,8 @@
 
 	.l-listen-hero .soundTitle__username {
 		border-radius: 2px !important;
-        font-weight: normal !important;
+		font-size: 14pt !important;
+		font-weight: normal !important;
 		padding: 8px 14px !important;
 		position: absolute;
 		margin-top: 0px !important;
@@ -1186,6 +1233,7 @@
 
 	.l-listen-hero .soundTitle__title {
 		border-radius: 2px !important;
+		font-size: 17pt !important;
 		padding: 12px 20px !important;
 		position: absolute !important;
 		margin-top: 40px !important;
@@ -1221,8 +1269,9 @@
 	}
 
 	.l-listen-hero .inPlaylist {
-		background: #212121 !important;
+		background: #F9AE74 !important;
 		border-radius: 2px !important;
+		color: #FFF !important;
 		padding: 18px 25px !important;
 		position: absolute !important;
 		margin-top: 100px !important;
@@ -1235,12 +1284,12 @@
 		border-radius: 2px !important;
 		font-size: 10pt !important;
 		font-weight: bold !important;
-		padding: 5px 10px !important;
+		padding: 10px 18px !important;
 	}
 
 	.l-listen-hero .sc-tag * {
-    	font-weight: normal !important;                                        
-    }
+		font-weight: normal !important;
+	}
 
 	.l-listen-wrapper .l-about-rows {
 
@@ -1271,16 +1320,20 @@
 
 	.l-listen-hero .genericTrackCount,
 	.systemPlaylistHero .genericTrackCount {
-		background-color: #60646D !important;
+		background-color: #F9AE74 !important;
 		border-radius: 2px !important;
 		font-stretch: condensed !important;
+		height: 120px !important;
+		width: 120px !important;
 		position: absolute !important;
-		margin-top: -125px !important;
+		margin-top: -135px !important;
 	}
 
 	.l-listen-hero .genericTrackCount__subtitle.sc-font,
-	.systemPlaylistHero .genericTrackCount__subtitle.sc-font {
-		font-size: 10pt !important;
+	.systemPlaylistHero .genericTrackCount__subtitle.sc-font,
+	.genericTrackCount__duration {
+		color: #FFF !important;
+		font-size: 12pt !important;
 		font-weight: bold !important;
 		margin-bottom: 2px !important;
 	}
@@ -1324,7 +1377,7 @@
 		border: none !important;
 		border-radius: 2px !important;
 		color: #FFF !important;
-		font-size: 10.5pt !important;
+		font-size: 12pt !important;
 		font-stretch: condensed !important;
 		font-weight: bold !important;
 		line-height: 7.5px !important;
@@ -1407,14 +1460,14 @@
 		border: none !important;
 		border-radius: 2px !important;
 		color: #FFF !important;
-		font-size: 10.5pt !important;
+		font-size: 12pt !important;
 		font-stretch: condensed !important;
 		font-weight: bold !important;
 		line-height: 7.5px !important;
-		height: 35px !important;
+		height: 38px !important;
 		min-width: 45px !important;
-		padding-right: 10px;
-		padding-left: 10px;
+		padding-right: 15px;
+		padding-left: 15px;
 		text-indent: 0px !important;
 		text-transform: uppercase !important;
 		margin-top: 10px !important;
@@ -1468,7 +1521,8 @@
 	}
 
 	.truncatedAudioInfo__content .sc-type-small {
-    	font-weight: normal !important;
+		font-size: 12pt !important;
+		font-weight: normal !important;
 	}
 
 	.l-listen-wrapper .l-about-row .userBadge__actions .sc-button-follow {
@@ -1476,13 +1530,13 @@
 		border: none !important;
 		border-radius: 2px !important;
 		color: #FFF !important;
-		font-size: 10.5pt !important;
+		font-size: 12pt !important;
 		font-stretch: condensed !important;
 		font-weight: bold !important;
-		height: 29px !important;
+		height: 34px !important;
 		width: auto !important;
-		padding-right: 10px !important;
-		padding-left: 10px !important;
+		padding-right: 15px !important;
+		padding-left: 15px !important;
 		text-transform: uppercase !important;
 		margin-top: 10px !important;
 	}
@@ -1496,9 +1550,9 @@
 	}
 
 	.l-listen-wrapper .userBadge__title .sc-truncate {
-		font-size: 12pt !important;
+		font-size: 15pt !important;
 		font-stretch: condensed !important;
-    	font-weight: normal !important;
+		font-weight: normal !important;
 		margin-top: 20px !important;
 	}
 
@@ -1507,7 +1561,7 @@
 		background: #25373D !important;
 		border-radius: 2px !important;
 		color: #FFF !important;
-		font-size: 12pt !important;
+		font-size: 14pt !important;
 		font-stretch: condensed !important;
 		padding: 5px 3px 6px 3px !important;
 		width: 100px !important;
@@ -1526,13 +1580,13 @@
 	}
 
 	.l-listen-wrapper .sc-tag.sc-tag-medium {
-		background: #00B5B5 !important;
+		background: #008891 !important;
 		border: transparent !important;
 		border-radius: 2px !important;
 		font-stretch: condensed !important;
-		font-size: 10.5pt !important;
+		font-size: 12pt !important;
 		font-weight: bold !important;
-		padding: 5px 10px 7px 10px !important;
+		padding: 8px 16px !important;
 		text-transform: uppercase;
 	}
 
@@ -1541,7 +1595,8 @@
 	}
 
 	.l-listen-wrapper .listenDetails__trackList .trackItem * {
-    	font-weight: normal !important;
+		font-size: 12pt !important;
+		font-weight: normal !important;
 	}
 
 	.l-listen-wrapper .listenDetails__trackList .sc-border-light-bottom {
@@ -1582,7 +1637,7 @@
 
 	.l-listen-wrapper .commentsList .sc-clearfix .commentsList__actualTitle,
 	.l-three-column .commentsList .sc-clearfix .commentsList__actualTitle {
-		font-size: 12pt !important;
+		font-size: 14pt !important;
 		font-stretch: condensed !important;
 		margin-bottom: 20px !important;
 	}
@@ -1620,7 +1675,7 @@
 
 	.l-listen-wrapper .commentsList .commentItem__content *,
 	.l-three-column .commentsList .commentItem__content * {
-		font-size: 11pt !important;
+		font-size: 12pt !important;
 	}
 
 	.l-listen-wrapper .commentsList .commentItem__createdAt.sc-text-light,
@@ -1634,13 +1689,13 @@
 		border: none !important;
 		border-radius: 2px !important;
 		color: #FFF !important;
-		font-size: 10pt !important;
+		font-size: 12pt !important;
 		font-stretch: condensed !important;
 		font-weight: bold !important;
-		line-height: 20px !important;
-		height: 25px !important;
-		padding-left: 14px !important;
-		padding-right: 14px !important;
+		line-height: 26px !important;
+		height: 30px !important;
+		padding-left: 16px !important;
+		padding-right: 16px !important;
 		text-indent: 0px !important;
 		text-transform: uppercase !important;
 	}
@@ -1696,10 +1751,10 @@
 		border: none !important;
 		border-radius: 2px !important;
 		color: #FFF !important;
-		font-size: 10.5pt !important;
+		font-size: 12pt !important;
 		font-stretch: condensed !important;
 		font-weight: bold !important;
-		height: 29px !important;
+		height: 34px !important;
 		width: 64px !important;
 		text-transform: uppercase !important;
 		margin-top: -10px !important;
@@ -1728,8 +1783,8 @@
 	}
 
 	.soundTitle__title {
-    	font-weight: normal !important;                                        
-    }
+		font-weight: normal !important;
+	}
 
 	.l-search .searchTitle .searchTitle__text {
 		border-bottom: none !important;
@@ -1763,7 +1818,7 @@
 	}
 
 	.userItem__details.sc-type-light {
-    	font-weight: normal !important;
+		font-weight: normal !important;
 	}
 
 	.l-search .userItem__coverArt {
@@ -1786,11 +1841,11 @@
 		border: none !important;
 		border-radius: 2px !important;
 		color: #FFF !important;
-		font-size: 10.5pt !important;
+		font-size: 12pt !important;
 		font-stretch: condensed !important;
 		font-weight: bold !important;
-		height: 29px !important;
-		width: 64px !important;
+		height: 34px !important;
+		width: 85px !important;
 		text-transform: uppercase !important;
 		margin-top: 0px !important;
 	}
@@ -1816,9 +1871,11 @@
 	}
 
 	.searchOptions__navigationItem {
-        font-size: 13pt !important;
-    	font-stretch: condensed;                                        
-    }
+		font-size: 14pt !important;
+		font-stretch: condensed;
+		padding-bottom: 5px !important;
+	}
+
 	.l-search .l-fixed-left .g-nav-item > .g-nav-link {
 		padding-left: 0px !important;
 	}
@@ -1894,19 +1951,24 @@
 		left: 31px !important;
 	}
 
-	.l-fixed-top-one-column .l-top .g-avatar-badge {
+	.l-fixed-top-one-column .l-top .g-avatar-badge,
+	.listenNetworkInfo__imageLink {
 		height: 40px !important;
 		width: 40px !important;
 		margin-top: 5px !important;
 	}
 
 	.l-fixed-top-one-column .l-top .g-avatar-badge .image,
-	.l-fixed-top-one-column .l-top .g-avatar-badge .image .sc-artwork {
+	.l-fixed-top-one-column .l-top .g-avatar-badge .image .sc-artwork,
+	.listenNetworkInfo__imageLink .image,
+	.listenNetworkInfo__imageLink .image .sc-artwork {
+		border-radius: 50% !important;
 		height: inherit !important;
 		width: inherit !important;
 	}
 
-	.l-fixed-top-one-column .l-top .userNetworkTop__title.sc-truncate {
+	.l-fixed-top-one-column .l-top .userNetworkTop__title.sc-truncate,
+	.listenNetworkInfo__title.sc-truncate {
 		font-stretch: condensed !important;
 		padding-top: 3px !important;
 		margin-bottom: 10px !important;
@@ -1921,7 +1983,7 @@
 	.l-fixed-top-one-column .l-top .g-tabs {
 		border-bottom: none !important;
 		font-family: "Roboto" !important;
-		font-size: 15pt !important;
+		font-size: 17pt !important;
 		font-stretch: condensed !important;
 		font-weight: normal !important;
 	}
@@ -1941,7 +2003,8 @@
 		margin-top: 22px !important;
 	}
 
-	.l-main .userNetwork {
+	.l-main .userNetwork,
+	.listenNetwork {
 		margin-top: -60px;
 	}
 
@@ -1955,7 +2018,8 @@
 	.collectionSection__heading,
 	.suggestedUserList__follow h2,
 	.recommendedStations__heading {
-		font-size: 14pt !important;
+		color: #7E7E7E !important;
+		font-size: 17pt !important;
 		font-weight: normal !important;
 		font-stretch: condensed !important;
 	}
@@ -1968,7 +2032,9 @@
 
 	.l-collection .sound,
 	.l-main .userNetwork .sound,
-	.l-search .searchList__item .sound {
+	.l-search .searchList__item .sound,
+	.listenNetwork .sound,
+	.tagsMain .sound {
 
 		/*** COLLECTION SOUND LIST ***/
 		border-top: 1px solid #EBEBEB !important;
@@ -1980,15 +2046,19 @@
 
 	.l-collection .collection__likesSection .soundTitle__additionalContainer,
 	.historicalPlays__item .soundTitle__additionalContainer,
+	.listenNetwork .soundTitle__additionalContainer,
 	.l-main .userNetwork .soundTitle__additionalContainer,
-	.l-search .searchList__item .soundTitle__additionalContainer {
+	.l-search .searchList__item .soundTitle__additionalContainer,
+	.tagsMain .soundTitle__additionalContainer {
 		width: 100% !important;
 	}
 
 	.l-collection .soundTitle__uploadTime,
 	.l-main .userNetwork .soundTitle__uploadTime,
-	.l-search .searchList__item .soundTitle__uploadTime {
-		font-size: 10.5pt !important;
+	.l-search .searchList__item .soundTitle__uploadTime,
+	.listenNetwork .soundTitle__uploadTime,
+	.tagsMain .soundTitle__uploadTime {
+		font-size: 12pt !important;
 		font-weight: bold !important;
 		line-height: 31px;
 		position: absolute !important;
@@ -1996,8 +2066,8 @@
 	}
 
 	.fullHero__uploadTime {
-    	font-weight: normal !important;                                        
-    }
+		font-weight: normal !important;
+	}
 
 	.l-collection .sound__footerRight {
 		display: none !important;
@@ -2022,7 +2092,9 @@
 
 	.playableTile__descriptionContainer *,
 	.playableTile__usernameHeadingContainer *,
-	.userBadgeListItem__heading {
+	.userBadgeListItem__heading,
+	.stationsBadge__heading {
+		font-size: 11pt !important;
 		font-weight: normal !important;
 	}
 
@@ -2034,17 +2106,18 @@
 	.l-collection .userBadgeListItem__action .sc-button-follow.sc-button-selected,
 	.l-main .userNetwork .userBadgeListItem__action .sc-button-follow,
 	.l-main .userNetwork .userBadgeListItem__action .sc-button-follow.sc-button-selected,
+	.sc-button-follow.sc-button.sc-button-small.sc-button-responsive,
 	.suggestedUserList__listContainer .sc-button-follow,
 	.suggestedUserList__listContainer .sc-button-follow.sc-button-selected {
 		background: #FF9F55 !important;
 		border: none !important;
 		border-radius: 2px !important;
 		color: #FFF !important;
-		font-size: 10.5pt !important;
+		font-size: 12pt !important;
 		font-stretch: condensed !important;
 		font-weight: bold !important;
-		height: 29px !important;
-		width: auto !important;
+		height: 34px !important;
+		width: 110px !important;
 		text-transform: uppercase !important;
 	}
 
@@ -2154,7 +2227,7 @@
 		border: none !important;
 		border-radius: 2px !important;
 		color: #FFF !important;
-		font-size: 10.5pt !important;
+		font-size: 12pt !important;
 		font-stretch: condensed !important;
 		font-weight: bold !important;
 		line-height: 7.5px !important;
@@ -2207,7 +2280,7 @@
 		border: none !important;
 		border-radius: 2px !important;
 		color: #FFF !important;
-		font-size: 10.5pt !important;
+		font-size: 12pt !important;
 		font-stretch: condensed !important;
 		font-weight: bold !important;
 		padding-top: 4px;
@@ -2235,10 +2308,12 @@
 	.l-messages-left .inbox__item::before {
 		display: none !important;
 	}
+
 }
 
 @-moz-document regexp("https://soundcloud.com/notifications.*") {
-/* NOTIFICATION */
+
+	/* NOTIFICATION */
 
 	/** DESCRIPTION : change the elements of the notification page **/
 	.l-fluid-fixed .l-main h1 {
@@ -2299,7 +2374,7 @@
 		border: none !important;
 		border-radius: 2px !important;
 		color: #FFF !important;
-		font-size: 10.5pt !important;
+		font-size: 12pt !important;
 		font-stretch: condensed !important;
 		font-weight: bold !important;
 		line-height: 7.5px !important;
@@ -2328,10 +2403,13 @@
 		background: transparent !important;
 		border: none !important;
 	}
+
 }
 
 @-moz-document url("https://soundcloud.com/charts/top") {
-* {
-	font-weight: normal;
+	* {
+		font-weight: normal;
+	}
+
 }
-}
+
