@@ -64,6 +64,7 @@
 
 	.header__navMenu > li > a {
 		border-right: none !important;
+		line-height: 20px !important;
 	}
 
 	.header__navMenu > li > a.selected,
