@@ -37,7 +37,6 @@
 	.paging-eof,
 	.premiumIconLink,
 	.profileMenu__link.profileMenu__premium,
-	.sc-promoted-icon,
 	.sc-tag::before,
 	.tagsMain .tabs__tabs,
 	.truncatedAudioInfo__license {
@@ -2412,4 +2411,5 @@
 	}
 
 }
+
 
