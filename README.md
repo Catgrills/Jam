@@ -30,7 +30,7 @@ Instruction
 <strong>Step 2 : Install the script </strong>
 <ol>
 <li> Via <a href="https://userstyles.org/styles/152849/jam-m-soundcloud-css">userstyles</a> : click the button <i>install Style</i> and it's done.</li>
-<li> Or <a href="https://pastebin.com/vxU1LnDN">manually</a> : create a new style in Stylish and copy/paste the script in it. The script was written for Firefox Mozilla, that's why for Google Chrome and such, you'll have to click the button <i>Import from Mozilla.</i></li>
+<li> Or <a href="https://pastebin.com/vxU1LnDN">manually</a> : create a new style in Stylish/Stylus and copy/paste the script in it. The script was written for Firefox Mozilla, that's why for Google Chrome and such, you'll have to click the button <i>Import from Mozilla.</i></li>
 </ol>
 
 <strong>Step 3 : Install the font </strong>
