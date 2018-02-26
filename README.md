@@ -1,6 +1,6 @@
 # Jam-M
 
-<img src="preview_kam-m.png" width="100%">
+<img src="preview_jam-m.png" width="100%">
 
 Preview of <i>Jam-M</i>.
 
