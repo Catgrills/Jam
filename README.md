@@ -1,8 +1,6 @@
 # Jam-M
 
-![screenshot](https://s1.gifyu.com/images/Screenshot-1325.png)
-
-![screenshot](https://s1.gifyu.com/images/Screenshot-1326.png)
+<img src="preview_kam-m.png" width="100%">
 
 Preview of <i>Jam-M</i>.
 
