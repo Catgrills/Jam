@@ -1,5 +1,17 @@
 @-moz-document domain("soundcloud.com") {
 
+	/* COLORS */
+
+	/** DESCRIPTION : set the colors **/
+	:root {
+		--body-bg: #F0F1F5 !important;
+		--card-bg: #FFF !important;
+		--border-color: #EBEBEB !important;
+		--primary-color: #333 !important;
+		--secondary-color: #7E7E7E !important;
+		--filter: invert(0) !important;
+	}
+
 	/* GENERAL */
 
 	/** DESCRIPTION : change the elements of all page **/
@@ -7,9 +19,13 @@
 		font-family: "Roboto", "ぼくたちのゴシック２ボールド" !important;
 	}
 
+	*::-moz-focus-inner {
+		border: 0;
+	}
+
 	body,
 	#app {
-		background: #F0F1F5 !important;
+		background: var(--body-bg) !important;
 	}
 
 	body {
@@ -22,6 +38,10 @@
 		left: 0px !important;
 		right: 0px !important;
 		margin: auto !important;
+	}
+
+	.l-fluid-fixed .sc-border-light-right {
+		border-right: none !important;
 	}
 
 	.l-container.l-content {
@@ -38,9 +58,48 @@
 	.premiumIconLink,
 	.profileMenu__link.profileMenu__premium,
 	.sc-tag::before,
+	.searchPremiumContentFooter,
 	.tagsMain .tabs__tabs,
-	.truncatedAudioInfo__license {
+	.textfield__clear,
+	.truncatedAudioInfo__license,
+	.truncatedUserDescription.m-overflow.m-collapsed .truncatedUserDescription__wrapper::after {
 		display: none !important;
+	}
+
+	.emptyNetworkPage__headline,
+	.inSetsList__empty *,
+	.searchList__emptyText {
+		color: var(--primary-color) !important;
+		font-size: 16pt !important;
+		font-stretch: condensed !important;
+	}
+
+	.sc-type-h3.emptyNetworkPage__action {
+		font-size: 16pt !important;
+		font-stretch: condensed !important;
+	}
+
+	.gritter-item-wrapper {
+		background: var(--card-bg) !important;
+		border: 1px solid var(--border-color) !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
+	}
+
+	.gritter-item {
+		background: var(--card-bg) !important;
+		border: none !important;
+		box-shadow: none !important;
+		padding: 15px !important;
+	}
+
+	.gritter-image {
+		display: none !important;
+	}
+
+	.gritter-item * {
+		color: var(--primary-color) !important;
+		font-size: 14pt !important;
+		font-stretch: condensed !important;
 	}
 
 	/* HEADER */
@@ -64,7 +123,7 @@
 
 	.header__navMenu > li > a {
 		border-right: none !important;
-		line-height: 20px !important;
+		line-height: 21px !important;
 	}
 
 	.header__navMenu > li > a.selected,
@@ -81,6 +140,7 @@
 		font-size: 12pt !important;
 		font-stretch: condensed !important;
 		font-weight: bold;
+		line-height: 21px !important;
 		text-transform: uppercase;
 	}
 
@@ -114,8 +174,8 @@
 	.headerSearch__input.sc-input {
 		background: inherit !important;
 		border-radius: 1px !important;
-		font-stretch: condensed !important;
 		font-size: 14pt !important;
+		font-stretch: condensed !important;
 		font-weight: normal !important;
 	}
 
@@ -127,6 +187,11 @@
 		background: #212121 !important;
 		padding: 5px !important;
 		margin-bottom: -10px !important;
+	}
+
+	.autocompleteItem * {
+		font-size: 14pt !important;
+		font-stretch: condensed !important;
 	}
 
 	.autocompleteItem__title {
@@ -161,11 +226,24 @@
 		background-color: #3C3741 !important;
 		border-bottom-right-radius: 2px !important;
 		border-bottom-left-radius: 2px !important;
-		font-size: 12pt !important;
+		font-size: 14pt !important;
 		font-stretch: condensed !important;
 		padding: 20px !important;
 		margin-left: 0px !important;
 		margin-right: 1px !important;
+	}
+
+	.conversationBadge__imageDeleted {
+		width: 40px !important;
+		height: 40px !important;
+	}
+
+	.conversationBadge__missingUsername,
+	.conversationBadge__time,
+	.conversationBadge__body.sc-truncate {
+		color: var(--primary-color) !important;
+		font-size: 14pt !important;
+		font-stretch: condensed !important;
 	}
 
 	.profileMenu__list.profileMenu__listener.sc-list-nostyle {
@@ -195,9 +273,9 @@
 
 	.notifications__viewAll.sc-type-h3.latestActivities__viewAll,
 	.notifications__viewAll.sc-type-h3.outgoing-messages.headerMessages__viewAll,
-	.profileMenu__list:not(:last-child),.moreMenu__list {
+	.profileMenu__list:not(:last-child),.moreMenu__list,.profileMenu__link.profileMenu__trackManager {
 		border: none;
-		font-size: 12pt !important;
+		font-size: 14pt !important;
 	}
 
 	.g-dark-bg .userBadge.m-horizontal .userBadge__meta {
@@ -209,17 +287,18 @@
 		margin-left: 4px !important;
 	}
 
+	.g-dark-bg .userBadge .userBadge__title *,
 	.g-dark-bg .userBadge .userBadge__title .sc-truncate {
-		font-size: 12pt !important;
+		font-size: 14pt !important;
 	}
 
 	.g-dark-bg .ownActivity__content * {
-		font-size: 12pt !important;
+		font-size: 14pt !important;
 	}
 
 	.g-dark .ownActivity .ownActivity__time {
-		font-size: 12pt !important;
-		top: 14px !important;
+		font-size: 14pt !important;
+		top: 5px !important;
 		right: 2px !important;
 	}
 
@@ -233,8 +312,8 @@
 	.playControls .playControls__inner {
 
 		/*** PLAYER CONTAINER ***/
-		background-color: #FFF !important;
-		border-top: 1px solid #EBEBEB !important;
+		background-color: var(--card-bg) !important;
+		border-top: 1px solid var(--border-color) !important;
 		padding: 10px 0px !important;
 	}
 
@@ -248,6 +327,7 @@
 		/*** PLAYER PREVIOUS BUTTON ***/
 		background: no-repeat url("https://i.imgur.com/uNuXhE0.png") center !important;
 		background-size: 17px auto !important;
+		filter: var(--filter) !important;
 	}
 
 	.playControl[title="Play current"] {
@@ -269,6 +349,7 @@
 		/*** PLAYER NEXT BUTTON ***/
 		background: no-repeat url("https://i.imgur.com/1rnYfSY.png") center !important;
 		background-size: 17px auto !important;
+		filter: var(--filter) !important;
 	}
 
 	.shuffleControl::before {
@@ -276,6 +357,7 @@
 		/*** PLAYER SHUFFLE BUTTON ***/
 		background: no-repeat url("https://i.imgur.com/LycNdmB.png") center !important;
 		background-size: 23px auto !important;
+		filter: var(--filter) !important;
 	}
 
 	.shuffleControl::after {
@@ -289,6 +371,7 @@
 		/*** PLAYER REPEAT BUTTON ***/
 		background: no-repeat url("https://i.imgur.com/4IYot9z.png") center !important;
 		background-size: 18px auto !important;
+		filter: var(--filter) !important;
 	}
 
 	.repeatControl::after {
@@ -300,12 +383,17 @@
 	.playControls .playControls__inner .playbackTimeline__duration {
 
 		/*** PLAYER TIME ***/
-		font-size: 11pt !important;
+		color: var(--primary-color);
+		font-size: 14pt !important;
 		font-stretch: condensed !important;
 	}
 
+	.playControls .playControls__inner .playbackTimeline__timePassed {
+		color: #FCA65F !important;
+	}
+
 	.volume__sliderWrapper {
-		background-color: #FFF !important;
+		background-color: var(--card-bg) !important;
 	}
 
 	.volume[data-level="1"] .volume__button,
@@ -338,13 +426,21 @@
 	}
 
 	.playbackSoundBadge__titleContextContainer a {
-		font-size: 11pt !important;
+		font-size: 14pt !important;
 		font-stretch: condensed !important;
 		max-width: 100% !important;
 		overflow: hidden !important;
 		text-overflow: ellipsis !important;
 		text-transform: lowercase !important;
 		white-space: nowrap !important;
+	}
+
+	.playbackSoundBadge__lightLink {
+	    	color: var(--secondary-color) !important;        
+	}
+
+	.playbackSoundBadge__titleLink {
+	    	color: var(--primary-color) !important;          
 	}
 
 	.playbackSoundBadge__titleLink,
@@ -360,8 +456,14 @@
 	}
 
 	.playControls .sc-button-small.sc-button-selected.sc-button-like::before,
-	.playControls .sc-button-small.sc-button-like::before {
+	.playControls .sc-button-small.sc-button-like::before,
+	.playbackSoundBadge__showQueue {
 		background-size: 21px 21px;
+	}
+
+	.sc-button-like.playbackSoundBadge__like[title="Like"],
+	.playbackSoundBadge__showQueue {
+		filter: var(--filter) !important;
 	}
 
 	.playbackSoundBadge__showQueue {
@@ -385,8 +487,8 @@
 	}
 
 	.l-tabs {
-		background: rgba(255, 255, 255, .98) !important;
-		border-bottom: 1px solid #EBEBEB !important;
+		background: var(--card-bg) !important;
+		border-bottom: 1px solid var(--border-color) !important;
 		padding: 15px 20px !important;
 		width: 100% !important;
 		text-align: center !important;
@@ -406,6 +508,7 @@
 	}
 
 	.l-tabs .streamExploreTabs .g-tabs .g-tabs-link {
+		color: var(--primary-color);
 		font-family: "Roboto" !important;
 		font-size: 17pt !important;
 		font-stretch: condensed !important;
@@ -416,6 +519,7 @@
 	.l-tabs .streamExploreTabs .g-tabs-link:focus,
 	.l-tabs .streamExploreTabs .g-tabs-link:hover {
 		border-color: transparent !important;
+		color: #FCA65F !important;
 	}
 
 	.soundList__item,
@@ -423,7 +527,7 @@
 	.searchList__item {
 
 		/*** STREAM SOUND LIST ITEM CONTAINER ***/
-		background: #FFF !important;
+		background: var(--card-bg) !important;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
 		padding: 100px 30px 30px 30px !important;
 		margin-bottom: 20px !important;
@@ -432,7 +536,7 @@
 	.soundList__item .soundContext {
 
 		/*** STREAM SOUND LIST ITEM UPLOADER ***/
-		border-bottom: 1px solid #EBEBEB !important;
+		border-bottom: 1px solid var(--border-color) !important;
 		padding: 20px !important;
 		position: absolute !important;
 		right: 0px !important;
@@ -454,8 +558,11 @@
 		padding-left: 7px !important;
 	}
 
+	.soundList__item .soundContext .soundContext__line.sc-font-body,
 	.soundList__item .soundContext .soundContext__line.sc-font-body * {
-		font-size: 12pt !important;
+		color: var(--primary-color);
+		font-size: 14pt !important;
+		font-stretch: condensed;
 		font-weight: normal !important;
 	}
 
@@ -485,22 +592,30 @@
 
 	.soundList__item .soundTitle__usernameTitleContainer,
 	.historicalPlays__item .soundTitle__usernameTitleContainer,
+	.sidebarContent .soundTitle__usernameTitleContainer,
 	.searchList__item .soundTitle__usernameTitleContainer {
 
 		/*** STREAM SOUND LIST ITEM TITLE ***/
-		padding-left: 10px !important;
+		padding-left: 8px !important;
 	}
 
 	.soundList__item .soundTitle__usernameTitleContainer * {
+		color: var(--primary-color);
+		font-size: 14pt !important;
+		font-stretch: condensed;
 		font-weight: normal !important;
 	}
 
 	.soundTitle__username span {
-		font-size: 12pt !important;
+		color: var(--secondary-color) !important;
+		font-size: 14pt !important;
+		font-stretch: condensed;
 	}
 
 	.soundTitle .soundTitle__title {
-		font-size: 12pt !important;
+		color: var(--primary-color) !important;
+		font-size: 16pt !important;
+		font-stretch: condensed !important;
 		min-height: 30px !important;
 		line-height: 25pt !important;
 	}
@@ -556,6 +671,10 @@
 		display: none;
 	}
 
+	.sound__soundActions {
+		background: transparent !important;
+	}
+
 	.soundList__item .sc-button-like,
 	.historicalPlays__item .sc-button-like,
 	.searchList__item .sc-button-like {
@@ -608,11 +727,28 @@
 	.searchList__item .compactTrackList {
 
 		/*** STREAM SOUND LIST COMPACT TRACK LIST ***/
+		border: 1px solid var(--border-color) !important;
 		border-radius: 1px !important;
 	}
 
+	.soundList__item .compactTrackList .sc-border-light-bottom,
+	.historicalPlays__item .compactTrackList .sc-border-light-bottom,
+	.searchList__item .compactTrackList .sc-border-light-bottom {
+		border-bottom: 1px solid var(--border-color) !important;
+	}
+
+	.compactTrackListItem.clickToPlay.active,
+	.compactTrackListItem.clickToPlay:hover,
+	.compactTrackListItem.clickToPlay:focus,
+	.compactTrackListItem.clickToPlay:hover .compactTrackListItem__additional {
+		background: transparent !important;
+		opacity: .8 !important;
+	}
+
 	.compactTrackListItem * {
-		font-size: 12pt !important;
+		color: var(--primary-color);
+		font-size: 14pt !important;
+		font-stretch: condensed;
 	}
 
 	.compactTrackList.expanded .compactTrackList__listContainer {
@@ -626,9 +762,9 @@
 	}
 
 	.compactTrackList__moreLink {
-		font-size: 11pt !important;
+		font-size: 14pt !important;
 		font-stretch: condensed;
-		font-weight: normal !important;
+		font-weight: bold !important;
 		text-transform: uppercase !important;
 	}
 
@@ -650,8 +786,9 @@
 	.searchList__item .soundTitle__tag.sc-tag.sc-tag-small {
 		background: #3C3741 !important;
 		border: transparent !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
 		border-radius: 2px !important;
-		font-size: 11pt !important;
+		font-size: 12pt !important;
 		font-weight: bold !important;
 		padding: 8px 12px 9px 12px !important;
 	}
@@ -676,7 +813,7 @@
 	.l-sidebar-right .sidebarModule {
 
 		/*** STREAM SIDEBAR CONTAINER ***/
-		background: #FFF !important;
+		background: var(--card-bg) !important;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
 		padding: 22px !important;
 	}
@@ -684,9 +821,9 @@
 	.l-sidebar-right .sidebarModule .sidebarHeader {
 
 		/*** STREAM SIDEBAR CONTAINER HEADER ***/
-		border-bottom: 1px solid #EBEBEB !important;
+		border-bottom: 1px solid var(--border-color) !important;
 		padding: 0px 20px 15px 20px !important;
-		margin: -7px -25px 8px -25px !important;
+		margin: -7px -22px 8px -22px !important;
 	}
 
 	.l-sidebar-right .sidebarModule .sidebarHeader .sc-icon-large {
@@ -697,9 +834,11 @@
 	.l-sidebar-right .sidebarModule .sidebarHeader .sidebarHeader__more.sc-type-h3 {
 		color: transparent !important;
 		width: 5px !important;
+		filter: var(--filter);
 	}
 
 	.l-sidebar-right .sidebarModule .sidebarHeader .sidebarHeader__title {
+		color: var(--secondary-color) !important;
 		font-size: 14pt !important;
 		font-stretch: condensed !important;
 		font-weight: normal !important;
@@ -715,6 +854,7 @@
 		margin-top: 8px !important;
 		margin-left: -15px !important;
 		opacity: .5 !important;
+		filter: var(--filter);
 	}
 
 	.l-sidebar-right .sidebarModule .soundBadge__content {
@@ -724,6 +864,9 @@
 	}
 
 	.l-sidebar-right .sidebarModule .sc-media-content * {
+		color: var(--primary-color);
+		font-size: 14pt !important;
+		font-stretch: condensed;
 		font-weight: normal !important;
 	}
 
@@ -790,7 +933,7 @@
 	.sc-button-dropdown:hover:not(.sc-button-dropdown-plain),
 	.sc-button-dropdown:focus:not(.sc-button-disabled):not(:disabled) {
 		outline: none !important;
-		background: #FFF !important;
+		background: var(--card-bg) !important;
 		box-shadow: none !important;
 	}
 
@@ -805,8 +948,15 @@
 		padding: 20px !important;
 	}
 
+	.chartsMain_listHeader * {
+		color: var(--secondary-color) !important;
+		font-size: 15pt !important;
+		font-stretch: condensed !important;
+		font-weight: normal !important;
+	}
+
 	.chartTracks {
-		background: #FFF !important;
+		background: var(--card-bg) !important;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
 		padding: 60px 20px 20px 20px !important;
 		margin-top: -70px !important;
@@ -817,6 +967,13 @@
 		font-stretch: condensed !important;
 	}
 
+	.chartTrack * {
+		color: var(--primary-color) !important;
+		font-size: 14pt !important;
+		font-stretch: condensed !important;
+		font-weight: normal !important;
+	}
+
 	.chartTracks .sc-ministats-medium.sc-ministats-plays::before {
 		display: none !important;
 	}
@@ -825,25 +982,58 @@
 
 	/** DESCRIPTION : change the elements of the discover page **/
 	.selectionModule__titleText {
-		color: #212121 !important;
+		color: var(--primary-color) !important;
 		font-size: 17pt !important;
 		font-stretch: condensed !important;
 		font-weight: normal !important;
 	}
 
+	.selectionModule {
+		border: none !important;
+	}
+
 	.selectionModule__description.sc-type-small.sc-type-light {
-		font-size: 12pt !important;
+		color: var(--secondary-color) !important;
+		font-size: 15pt !important;
+		font-stretch: condensed;
 		font-weight: normal !important;
 	}
 
 	.playableTile__mainHeading {
+		color: var(--primary-color) !important;
+		font-size: 14pt !important;
+		font-stretch: condensed;
+		font-weight: normal !important;
+	}
+
+	.selectionModule__socialProofLine * {
+		font-size: 14pt !important;
+		font-stretch: condensed;
 		font-weight: normal !important;
 	}
 
 	.selectionPlaylists {
-		background: #FFF !important;
+		background: var(--card-bg) !important;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1) !important;
 		padding: 30px !important;
+	}
+
+	.selectionModulePlaylistLink .sc-button {
+		background: #FCA65F !important;
+		border: none !important;
+		border-radius: 2px !important;
+		color: #FFF !important;
+		font-size: 12pt !important;
+		font-stretch: condensed !important;
+		font-weight: bold !important;
+		line-height: 31px !important;
+		height: 35px !important;
+		min-width: 45px !important;
+		padding-right: 13px;
+		padding-left: 13px;
+		text-indent: 0px !important;
+		text-transform: uppercase !important;
+		margin-right: 6px !important;
 	}
 
 	/* USER */
@@ -852,8 +1042,8 @@
 	.l-vertical-bar {
 
 		/*** USER NAVIGATION BAR ***/
-		background: rgba(255, 255, 255, .98) !important;
-		border-bottom: 1px solid #EBEBEB !important;
+		background: var(--card-bg) !important;
+		border-bottom: 1px solid var(--border-color) !important;
 		width: 100% !important;
 		position: fixed !important;
 		top: 46px !important;
@@ -872,9 +1062,14 @@
 		font-stretch: condensed !important;
 	}
 
+	.l-vertical-bar .userInfoBar .g-tabs-link {
+		color: var(--primary-color) !important;
+	}
+
 	.l-vertical-bar .userInfoBar .g-tabs-link.active,
 	.l-vertical-bar .userInfoBar .g-tabs-link:hover {
 		border: none !important;
+		color: #FCA65F !important;
 	}
 
 	.l-vertical-bar .userInfoBar__buttons {
@@ -993,6 +1188,8 @@
 	.profileHeaderInfo__content h3,
 	.profileHeaderInfo__content h4 {
 		border-radius: 2px !important;
+		font-size: 16pt;
+		font-stretch: condensed;
 		font-weight: normal !important;
 		padding: 10px 13px !important;
 		margin-bottom: 10px !important;
@@ -1025,12 +1222,17 @@
 		font-stretch: condensed !important;
 	}
 
+	.spotlight__recent.sc-border-light-top {
+		border-color: #BEBEBE !important;
+		border-top-style: dotted;
+	}
+
 	.userMain__content .spotlight__item {
 		border-radius: 1px !important;
 	}
 
 	.userMain__content .sound {
-		border-top: 1px solid #EBEBEB !important;
+		border-top: 1px solid var(--border-color) !important;
 		padding: 30px !important;
 		margin-right: -30px !important;
 		margin-left: -30px !important;
@@ -1041,7 +1243,7 @@
 	}
 
 	.userMain__content .soundTitle__uploadTime {
-		font-size: 12pt !important;
+		font-size: 14pt !important;
 		font-weight: bold !important;
 		line-height: 35px;
 		position: absolute !important;
@@ -1055,7 +1257,7 @@
 	.userSidebar .infoStats {
 
 		/*** USER SIDEBAR ***/
-		background: #FFF !important;
+		background: var(--card-bg) !important;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1) !important;
 		padding: 20px !important;
 		margin-top: -57px !important;
@@ -1074,7 +1276,9 @@
 
 	.userSidebar .infoStats .truncatedUserDescription__content,
 	.userSidebar .infoStats .web-profiles {
-		font-size: 12pt !important;
+		color: var(--primary-color);
+		font-size: 14pt !important;
+		font-stretch: condensed;
 	}
 
 	.userSidebar .sc-social-logo {
@@ -1089,12 +1293,20 @@
 
 	.userSidebar .commentBadgeList .commentBadge__title,
 	.userSidebar .relativeTime {
-		font-size: 12pt !important;
+		color: var(--secondary-color);
+		font-size: 14pt !important;
+		font-stretch: condensed;
 	}
 
 	.userSidebar .commentBadgeList .commentBadge__body {
-		font-size: 12pt !important;
+		color: var(--primary-color);
+		font-size: 14pt !important;
+		font-stretch: condensed;
 		margin-top: 10px !important;
+	}
+
+	.userSidebar .commentBadgeList .sc-border-light-top {
+		border-color: var(--border-color) !important;
 	}
 
 	/* TRACK */
@@ -1126,12 +1338,26 @@
 		left: 0px !important;
 	}
 
+	.stationHeader__seed {
+		font-stretch: condensed;    
+	}
+
+	.stationHeader__type::before {
+	 	display: none !important;   
+	}
+
+	.stationHeader__type,
+	.inThisStation * {
+	    font-size: 15pt !important;
+		font-stretch: condensed;           
+	}
+
 	.l-station-hero.l-inner-fullwidth .sc-button-like.sc-button.sc-button-small.sc-button-responsive {
 		background: #47B39D;
 		border: none !important;
 		border-radius: 2px !important;
 		color: #FFF !important;
-		font-size: 12pt !important;
+		font-size: 14pt !important;
 		font-stretch: condensed !important;
 		font-weight: bold !important;
 		line-height: 7.5px !important;
@@ -1203,7 +1429,8 @@
 
 	.l-listen-hero .soundTitle__username {
 		border-radius: 2px !important;
-		font-size: 14pt !important;
+		font-size: 16pt !important;
+		font-stretch: condensed;
 		font-weight: normal !important;
 		padding: 8px 14px !important;
 		position: absolute;
@@ -1212,6 +1439,8 @@
 
 	.listenContent.l-inner-fullwidth.listenContent__sound .soundTitle__username {
 		border-radius: 2px !important;
+		font-size: 14pt !important;
+		font-stretch: condensed;
 		padding: 8px 14px !important;
 		max-width: 100px !important;
 		position: absolute !important;
@@ -1234,6 +1463,7 @@
 	.l-listen-hero .soundTitle__title {
 		border-radius: 2px !important;
 		font-size: 17pt !important;
+		font-stretch: condensed;
 		padding: 12px 20px !important;
 		position: absolute !important;
 		margin-top: 40px !important;
@@ -1282,19 +1512,19 @@
 		background: #60646D !important;
 		border: transparent !important;
 		border-radius: 2px !important;
-		font-size: 10pt !important;
-		font-weight: bold !important;
+		font-stretch: condensed;
+		text-transform: uppercase;
 		padding: 10px 18px !important;
 	}
 
 	.l-listen-hero .sc-tag * {
-		font-weight: normal !important;
+		font-weight: bold !important;
 	}
 
 	.l-listen-wrapper .l-about-rows {
 
 		/*** TRACK MAIN CONTAINER ***/
-		background: #FFF !important;
+		background: var(--card-bg) !important;
 		border-right: none !important;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
 		padding: 30px !important;
@@ -1305,7 +1535,7 @@
 
 	.l-three-column.listen-about {
 		padding: 30px !important;
-		margin-top: 350px !important;
+		margin-top: 390px !important;
 		margin-right: 30px !important;
 		margin-bottom: 30px !important;
 	}
@@ -1347,24 +1577,42 @@
 	.l-hero-content .l-main.sc-border-light-right {
 
 		/*** TRACK PLAYLIST MAIN CONTAINER ***/
-		background: #FFF !important;
+		background: var(--card-bg) !important;
+		border: none !important;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
 		padding: 40px !important;
 		margin-top: 370px !important;
 	}
 
 	.l-three-column.listen-about .l-main.sc-border-light-right {
-		background: #FFF !important;
+		background: var(--card-bg) !important;
+		border: none !important;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
 		padding: 40px !important;
 	}
 
+	.l-three-column.listen-about .l-main.sc-border-light-right * {
+		color: var(--primary-color);
+		font-size: 14pt !important;
+		font-stretch: condensed;
+	}
+
 	.l-hero-content .l-main {
-		background: #FFF !important;
+		background: var(--card-bg) !important;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
 		padding: 40px !important;
 		margin-top: 370px !important;
 		margin-right: 30px !important;
+	}
+
+	.systemPlaylistTrackList__item.sc-border-light-bottom {
+		border-color: var(--border-color) !important;
+	}
+
+	.systemPlaylistTrackList__item.sc-border-light-bottom * {
+		color: var(--primary-color);
+		font-size: 14pt !important;
+		font-stretch: condensed;
 	}
 
 	.systemPlaylistDetails__controls.sc-border-light-bottom {
@@ -1398,17 +1646,27 @@
 		background: #FEC606 !important;
 	}
 
+	.systemPlaylistDetails__description {
+		color: var(--secondary-color);
+		font-size: 16pt !important;
+		font-stretch: condensed !important;
+	}
+
 	.systemPlaylistDetails__controls .sc-button-medium.sc-button-queue::before,
 	.systemPlaylistDetails__controls .sc-button-medium.sc-button-addtoset::before {
 		display: none;
 	}
 
 	.l-hero-content .l-main .systemPlaylistTrackList {
-		border: 1px solid #EBEBEB !important;
+		border: 1px solid var(--border-color) !important;
 	}
 
 	.l-hero-content .l-main .systemPlaylistTrackList .trackItem {
 		padding-left: 8px !important;
+	}
+
+	.l-hero-content .l-main .trackItem.g-flex-row.sc-type-small.sc-type-light.active {
+		padding-left: 20px !important;
 	}
 
 	.l-hero-content .l-main .systemPlaylistTrackList .trackItem.g-flex-row.sc-type-small.sc-type-light:hover {
@@ -1423,7 +1681,7 @@
 	.l-listen-wrapper .l-about-row .l-about-top {
 
 		/*** TRACK MAIN CONTAINER ACTION ROW ***/
-		border-bottom: 1px solid #EBEBEB !important;
+		border-bottom: 1px solid var(--border-color) !important;
 		padding: 0px 30px 20px 30px;
 		margin-right: -30px !important;
 		margin-bottom: 20px;
@@ -1436,20 +1694,28 @@
 	}
 
 	.l-listen-wrapper .l-about-row .commentForm__wrapper {
-		background: #F0F1F5 !important;
-		border: 1px solid #EBEBEB !important
+		background: var(--body-bg) !important;
+		border: 1px solid var(--border-color) !important
+	}
+
+	.listen-content .commentForm.m-large .commentForm__wrapper {
+		background: var(--card-bg) !important;
+		border: 1px solid var(--border-color) !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
 	}
 
 	.l-listen-wrapper .l-about-row .commentForm__wrapper .sc-artwork {
-		border: 1px solid #EBEBEB !important;
+		border: 1px solid var(--border-color) !important;
 		height: 38px !important;
 		width: 38px !important;
 	}
 
-	.l-listen-wrapper .l-about-row .commentForm.m-large .commentForm__input {
-		background: transparent !important;
+	.l-listen-wrapper .l-about-row .commentForm.m-large .commentForm__input,
+	.listen-content .commentForm__wrapper .commentForm__input {
+		background: inherit !important;
 		border: none !important;
-		font-size: 12pt !important;
+		color: var(--primary-color);
+		font-size: 14pt !important;
 		font-stretch: condensed !important;
 		letter-spacing: .1px !important;
 		text-transform: lowercase !important;
@@ -1505,11 +1771,23 @@
 
 	.l-listen-wrapper .l-about-row .listenEngagement__stats {
 		margin-top: 16px !important;
-		visibility: hidden;
+	}
+
+	.l-listen-wrapper .l-about-row .listenEngagement__stats * {
+		color: var(--primary-color) !important;
+		font-size: 16pt !important;
+		font-stretch: condensed !important;
+	}
+
+	.sc-ministats-medium::before {
+		background-size: 22px 22px !important;
+		height: 22px !important;
+		width: 22px !important;
+		margin-top: -2px !important;
 	}
 
 	.l-listen-wrapper .l-about-row  .image__lightOutline .image__full {
-		border: 1px solid #EBEBEB !important;
+		border: 1px solid var(--border-color) !important;
 		border-radius: 2px !important;
 		box-shadow: none !important;
 	}
@@ -1521,7 +1799,9 @@
 	}
 
 	.truncatedAudioInfo__content .sc-type-small {
-		font-size: 12pt !important;
+		color: var(--primary-color) !important;
+		font-size: 14pt !important;
+		font-stretch: condensed;
 		font-weight: normal !important;
 	}
 
@@ -1550,6 +1830,7 @@
 	}
 
 	.l-listen-wrapper .userBadge__title .sc-truncate {
+		color: var(--primary-color) !important;
 		font-size: 15pt !important;
 		font-stretch: condensed !important;
 		font-weight: normal !important;
@@ -1591,16 +1872,18 @@
 	}
 
 	.l-listen-wrapper .listenDetails__trackList {
-		border: 1px solid #EBEBEB !important;
+		border: 1px solid var(--border-color) !important;
 	}
 
 	.l-listen-wrapper .listenDetails__trackList .trackItem * {
-		font-size: 12pt !important;
+		color: var(--primary-color);
+		font-size: 14pt !important;
+		font-stretch: condensed;
 		font-weight: normal !important;
 	}
 
 	.l-listen-wrapper .listenDetails__trackList .sc-border-light-bottom {
-		border-bottom: 1px solid #f2f2f2;
+		border-bottom: 1px solid var(--border-color);
 		padding: 3px 10px !important;
 	}
 
@@ -1614,16 +1897,28 @@
 		display: none !important;
 	}
 
+	.truncatedAudioInfo .listenInfo__releaseTitle,
+	.listenInfo__releaseData {
+		color: var(--secondary-color) !important;
+		font-size: 14pt !important;
+		font-stretch: condensed;
+		line-height: 18pt !important;
+	}
+
 	.l-listen-wrapper .commentsList.g-box-full.lazyLoadingList,
 	.l-three-column .commentsList.g-box-full.lazyLoadingList {
 
 		/*** TRACK MAIN CONTAINER DESCRIPTION ROW COMMENTS ***/
-		background: #FFF !important;
-		border: 1px solid #EBEBEB;
+		background: var(--card-bg) !important;
+		border: 1px solid var(--border-color);
 		padding: 30px 30px 120px 30px !important;
 		left: 5px !important;
 		margin-top: 54px !important;
 		width: auto !important;
+	}
+
+	.commentsList.g-box-full.lazyLoadingList .sc-border-light-bottom {
+		border-bottom: 1px solid var(--border-color) !important;
 	}
 
 	.l-listen-wrapper .commentsList .sc-clearfix,
@@ -1637,7 +1932,8 @@
 
 	.l-listen-wrapper .commentsList .sc-clearfix .commentsList__actualTitle,
 	.l-three-column .commentsList .sc-clearfix .commentsList__actualTitle {
-		font-size: 14pt !important;
+		color: var(--primary-color);
+		font-size: 16pt !important;
 		font-stretch: condensed !important;
 		margin-bottom: 20px !important;
 	}
@@ -1650,7 +1946,7 @@
 
 	.l-listen-wrapper .commentsList .commentItem.m-isReply,
 	.l-three-column .commentsList .commentItem.m-isReply {
-		border-left: 2px solid #EBEBEB !important;
+		border-left: 2px solid var(--border-color) !important;
 		padding-left: 20px !important;
 	}
 
@@ -1673,14 +1969,23 @@
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
 	}
 
+	.l-listen-wrapper .commentsList .commentItem__content,
+	.l-three-column .commentsList .commentItem__content {
+		max-width: 100% !important;
+		overflow: hidden;
+	}
+
 	.l-listen-wrapper .commentsList .commentItem__content *,
 	.l-three-column .commentsList .commentItem__content * {
-		font-size: 12pt !important;
+		color: var(--primary-color) !important;
+		font-size: 14pt !important;
+		font-stretch: condensed;
 	}
 
 	.l-listen-wrapper .commentsList .commentItem__createdAt.sc-text-light,
 	.l-three-column .commentsList .commentItem__createdAt.sc-text-light {
-		font-size: 12.5pt !important;
+		color: var(--secondary-color) !important;
+		font-size: 14pt !important;
 		font-stretch: condensed !important;
 	}
 
@@ -1711,7 +2016,7 @@
 	}
 
 	.l-three-column.listen-about .listenInfo {
-		background: #FFF !important;
+		background: var(--card-bg) !important;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
 		padding: 20px !important;
 		width: 100% !important;
@@ -1731,9 +2036,16 @@
 	}
 
 	.l-three-column.listen-about .sc-border-light-bottom.listenNetworkSidebar__creator {
-		background: #FFF !important;
+		background: var(--card-bg) !important;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
+		border: none !important;
 		padding: 20px !important;
+	}
+
+	.l-three-column.listen-about .userBadge.m-horizontal.m-premium .userBadge__usernameLink {
+		color: var(--primary-color) !important;
+		font-size: 14pt !important;
+		font-stretch: condensed;
 	}
 
 	.l-three-column.listen-about .sc-clearfix.sc-type-light.sc-truncate {
@@ -1772,8 +2084,8 @@
 	.l-search .searchTitle {
 
 		/*** SEARCH TITLE ***/
-		background: rgba(255, 255, 255, .98) !important;
-		border-bottom: 1px solid #EBEBEB !important;
+		background: var(--card-bg) !important;
+		border-bottom: 1px solid var(--border-color) !important;
 		padding: 20px 20px 22px 20px !important;
 		width: 100% !important;
 		position: fixed !important;
@@ -1788,7 +2100,8 @@
 
 	.l-search .searchTitle .searchTitle__text {
 		border-bottom: none !important;
-		font-size: 15pt !important;
+		color: var(--primary-color);
+		font-size: 17pt !important;
 		font-stretch: condensed !important;
 		font-weight: normal !important;
 	}
@@ -1817,7 +2130,11 @@
 		left: 0px !important;
 	}
 
+	.userItem__title *,
 	.userItem__details.sc-type-light {
+		color: var(--primary-color) !important;
+		font-size: 14pt !important;
+		font-stretch: condensed;
 		font-weight: normal !important;
 	}
 
@@ -1857,8 +2174,8 @@
 	.l-search .l-fixed-left .searchOptions__scrollableInner .searchOptions__container {
 
 		/*** SEARCH SIDEBAR ***/
-		background: #FFF !important;
-		border: 1px solid #EBEBEB !important;
+		background: var(--card-bg) !important;
+		border: 1px solid var(--border-color) !important;
 		height: auto !important;
 		padding: 20px 30px !important;
 	}
@@ -1886,6 +2203,7 @@
 
 	.l-search .l-fixed-left .searchOptions__scrollableInner .g-nav-item * {
 		background: none !important;
+		color: var(--primary-color);
 	}
 
 	.l-search .l-fixed-left .searchOptions__footer,
@@ -1895,9 +2213,19 @@
 	}
 
 	.l-search .l-fixed-left .sc-border-light-top,
-	.l-search .l-fixed-left .searchTags__title {
+	.l-search .l-fixed-left .searchTags__title,
+	.searchOptions__filterCategory-text {
 		border-top: none !important;
-		font-size: 12pt !important;
+		color: var(--secondary-color);
+		font-size: 14pt !important;
+		font-stretch: condensed;
+	}
+
+	.searchOptions__filter,
+	.searchTags__locations * {
+		color: var(--primary-color) !important;
+		font-size: 14pt !important;
+		font-stretch: condensed;
 	}
 
 	.l-search .l-fixed-left .searchOptions__filterCategory {
@@ -1908,9 +2236,12 @@
 		background: #60646D !important;
 		border: transparent !important;
 		border-radius: 2px !important;
-		font-size: 10pt !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
+		font-size: 12pt !important;
 		font-weight: bold !important;
-		padding: 5px 10px !important;
+		line-height: 18pt !important;
+		padding: 5px 15px 13px 15px !important;
+		text-transform: uppercase;
 	}
 
 	/* COLLECTION */
@@ -1920,8 +2251,8 @@
 	.l-fixed-top-one-column .l-top {
 
 		/*** COLLECTION NAVIGATION BAR ***/
-		background: rgba(255, 255, 255, 0.98) !important;
-		border-bottom: 1px solid #EBEBEB !important;
+		background: var(--card-bg) !important;
+		border-bottom: 1px solid var(--border-color) !important;
 		padding: 15px 20px 18px 20px !important;
 		position: fixed !important;
 		top: 16px !important;
@@ -1931,15 +2262,16 @@
 	}
 
 	.l-one-column > .l-main > div > h1 {
-		background: rgba(255, 255, 255, .98) !important;
-		border-bottom: 1px solid #EBEBEB !important;
+		background: var(--card-bg) !important;
+		border-bottom: 1px solid var(--border-color) !important;
+		color: var(--primary-color) !important;
 		font-size: 17pt !important;
 		font-stretch: condensed !important;
 		font-weight: normal !important;
 		padding: 20px 20px 22px 20px !important;
 		width: 100% !important;
 		position: fixed !important;
-		top: 47px !important;
+		top: 46px !important;
 		left: 0px !important;
 	}
 
@@ -1969,10 +2301,16 @@
 
 	.l-fixed-top-one-column .l-top .userNetworkTop__title.sc-truncate,
 	.listenNetworkInfo__title.sc-truncate {
+		color: var(--primary-color) !important;
 		font-stretch: condensed !important;
 		padding-top: 3px !important;
 		margin-bottom: 10px !important;
 		margin-left: -3px !important;
+	}
+
+	.listenNetworkInfo__title.sc-truncate *,
+	.l-fixed-top-one-column .l-top .userNetworkTop__title.sc-truncate a {
+		color: var(--primary-color) !important;
 	}
 
 	.l-nav .collectionNav.g-tabs.g-tabs-large {
@@ -1982,6 +2320,7 @@
 	.l-nav .g-tabs-link,
 	.l-fixed-top-one-column .l-top .g-tabs {
 		border-bottom: none !important;
+		color: var(--primary-color);
 		font-family: "Roboto" !important;
 		font-size: 17pt !important;
 		font-stretch: condensed !important;
@@ -1993,6 +2332,12 @@
 	.l-fixed-top-one-column .l-top .g-tabs-link,
 	.l-fixed-top-one-column .l-top .g-tabs-link:visited {
 		border-bottom: none !important;
+		color: var(--primary-color);
+	}
+
+	.l-nav .g-tabs-link.active,
+	.l-fixed-top-one-column .l-top .g-tabs-link.active {
+		color: #FCA65F !important;
 	}
 
 	.l-collection .collectionSection__top.g-flex-row-centered-spread,
@@ -2024,6 +2369,10 @@
 		font-stretch: condensed !important;
 	}
 
+	.suggestedUserList__follow.sc-border-light-bottom {
+		border-bottom: 1px dotted #BEBEBE !important;
+	}
+
 	.collection__oneRowSection {
 
 		/*** COLLECTION SECTION ***/
@@ -2037,7 +2386,7 @@
 	.tagsMain .sound {
 
 		/*** COLLECTION SOUND LIST ***/
-		border-top: 1px solid #EBEBEB !important;
+		border-top: 1px solid var(--border-color) !important;
 		padding: 30px !important;
 		margin-top: -30px !important;
 		margin-right: -30px !important;
@@ -2058,7 +2407,7 @@
 	.l-search .searchList__item .soundTitle__uploadTime,
 	.listenNetwork .soundTitle__uploadTime,
 	.tagsMain .soundTitle__uploadTime {
-		font-size: 12pt !important;
+		font-size: 14pt !important;
 		font-weight: bold !important;
 		line-height: 31px;
 		position: absolute !important;
@@ -2066,6 +2415,8 @@
 	}
 
 	.fullHero__uploadTime {
+		font-size: 16pt !important;
+		font-stretch: condensed;
 		font-weight: normal !important;
 	}
 
@@ -2073,8 +2424,13 @@
 		display: none !important;
 	}
 
-	.l-collection .collectionSection__filterText .textfield__input {
-		font-size: 11pt !important;
+	.l-collection .collectionSection__filterText .textfield__input,
+	.sc-button-dropdown.sc-button.sc-button-medium.sc-button-responsive {
+		background: var(--card-bg);
+		border: 1px solid var(--border-color) !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
+		color: var(--primary-color) !important;
+		font-size: 14pt !important;
 		font-stretch: condensed !important;
 		font-weight: normal !important;
 		padding-left: 8px !important;
@@ -2093,9 +2449,24 @@
 	.playableTile__descriptionContainer *,
 	.playableTile__usernameHeadingContainer *,
 	.userBadgeListItem__heading,
-	.stationsBadge__heading {
-		font-size: 11pt !important;
+	.stationTile__heading {
+		color: var(--primary-color) !important;
+		font-size: 14pt !important;
+		font-stretch: condensed;
 		font-weight: normal !important;
+	}
+
+	.playableTile__usernameHeadingContainer *,
+	.stationsBadge__heading {
+		color: var(--secondary-color) !important;
+		font-size: 14pt !important;
+		font-stretch: condensed;
+		font-weight: normal !important;
+	}
+
+	.collection.m-overview .collection__section:not(:last-child) {
+		border-bottom: 1px dotted #BEBEBE !important;
+		margin-bottom: 10px !important;
 	}
 
 	.l-collection .playableTile__descriptionContainer .sc-icon.sc-icon-large {
@@ -2122,9 +2493,12 @@
 	}
 
 	.l-collection .sc-button.collectionSection__action {
+		background: var(--card-bg) !important;
+		border: 1px solid var(--border-color) !important;
 		border-radius: 1px !important;
-		color: #7E7E7E !important;
-		font-size: 12pt !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
+		color: var(--secondary-color) !important;
+		font-size: 14pt !important;
 		font-stretch: condensed !important;
 		font-weight: normal !important;
 		height: 31px !important;
@@ -2134,17 +2508,65 @@
 	}
 
 	.userNetworkCommentsList {
-		background: #FFF !important;
+		background: var(--card-bg) !important;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
 	}
 
 	.userNetworkCommentsList .userNetworkComments__item {
+		border-color: var(--border-color);
 		padding: 18px 22px !important;
 	}
 
 	.userNetworkCommentsList .userNetworkComments__item .commentBadge__title,
 	.userNetworkCommentsList .relativeTime {
-		font-size: 11pt !important;
+		color: var(--primary-color) !important;
+		font-size: 16pt !important;
+		font-stretch: condensed;
+	}
+
+	.userNetworkComments__item .commentBadge__body {
+		color: var(--secondary-color) !important;
+		font-size: 16pt !important;
+		font-stretch: condensed;
+	}
+
+	.badgeList__item .playableTile__playButton.audibleTile__playButton.g-z-index-content {
+		height: 100% !important;
+		width: 100% !important;
+		top: -2px !important;
+		left: 0px !important;
+	}
+
+	.badgeList__item .playButton.m-stretch {
+		border-radius: 1px !important;      
+		top: 1px !important;
+	}
+
+	.playableTile__playButton.audibleTile__playButton.g-z-index-content {
+		border-radius: 1px !important;
+		top: -1px !important;
+		opacity: .7 !important;
+	}
+
+	.moreActions {
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
+		border: 1px solid var(--border-color) !important;
+		border-radius: 1px !important;
+	}
+
+	.moreActions__button:not(:last-child),.moreActions__link {
+		border-bottom: 1px solid var(--border-color) !important;
+	}
+
+	.moreActions__button.sc-button-medium::before {
+		filter: var(--filter) !important;
+	}
+
+	.moreActions__button.sc-button-medium {
+		background: var(--card-bg) !important;
+		color: var(--primary-color) !important;
+		font-size: 14pt !important;
+		font-stretch: condensed !important;
 	}
 
 	/* UPLOAD */
@@ -2152,7 +2574,7 @@
 	/** DESCRIPTION : change the elements of the upload page **/
 	.l-creators-navigation.l-inner-fullwidth {
 		background: rgba(255, 255, 255, .98) !important;
-		border-bottom: 1px solid #EBEBEB !important;
+		border-bottom: 1px solid var(--border-color) !important;
 		padding: 0px 10px 4px 10px !important;
 		position: fixed !important;
 		top: 46px !important;
@@ -2183,7 +2605,7 @@
 	}
 
 	.l-main.l-inner-fullwidth {
-		background: #FFF !important;
+		background: var(--card-bg) !important;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
 		padding: 20px !important;
 		margin-top: 80px !important;
@@ -2193,8 +2615,9 @@
 
 	/** DESCRIPTION : change the elements of the messages page **/
 	.l-messages-left .inbox h1 {
-		background: rgba(255, 255, 255, .98) !important;
-		border-bottom: 1px solid #EBEBEB !important;
+		background: var(--card-bg) !important;
+		border-bottom: 1px solid var(--border-color) !important;
+		color: var(--primary-color);
 		font-size: 19pt !important;
 		font-stretch: condensed !important;
 		padding: 20px 20px 22px 20px !important;
@@ -2205,8 +2628,12 @@
 		z-index: 99 !important;
 	}
 
+	.inbox.g-box-full.lazyLoadingList.sc-border-light-right {
+		border: none !important;
+	}
+
 	.l-messages-main {
-		background: #FFF !important;
+		background: var(--card-bg) !important;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
 		padding: 30px !important;
 		margin-top: 100px !important;
@@ -2215,11 +2642,17 @@
 
 	.l-messages-main .conversation__actions.sc-border-box.g-z-index-content {
 		background: transparent !important;
-		border-bottom: 1px solid #EBEBEB !important;
+		border-bottom: 1px solid var(--border-color) !important;
+		box-shadow: none !important;
 		width: 860px !important;
 		padding-right: 15px !important;
 		margin-right: 0px !important;
 		margin-top: -44px !important;
+	}
+
+	.conversationActions__missingUser {
+		color: var(--primary-color) !important;
+		font-stretch: condensed !important;
 	}
 
 	.l-messages-main .conversation__actions.sc-border-box.g-z-index-content .sc-button-group .sc-button.sc-button-small.sc-button-responsive {
@@ -2248,8 +2681,22 @@
 		margin-top: -20px !important;
 	}
 
+	.conversationMessage__from * {
+		color: var(--primary-color) !important;
+		font-size: 16pt !important;
+		font-stretch: condensed !important;
+	}
+
 	.l-messages-main .relativeTime {
-		font-size: 11pt !important;
+		color: var(--secondary-color) !important;
+		font-size: 16pt !important;
+		font-stretch: condensed;
+	}
+
+	.conversationMessage__body {
+		color: var(--primary-color) !important;
+		font-size: 14pt !important;
+		font-stretch: condensed !important;
 	}
 
 	.l-messages-main .sc-button-small.sc-button-icon:not(.sc-button-stretch-icon)::before {
@@ -2267,7 +2714,19 @@
 
 	.l-messages-main .sc-input,
 	.composeMessage__bottomWrapper {
+		background: var(--body-bg) !important;
+		border: none !important;
 		border-radius: 1px !important;
+		color: var(--primary-color) !important;
+		font-size: 14pt !important;
+		font-stretch: condensed;
+	}
+
+	.composeMessage__sendButton.sc-button-cta.sc-button.sc-button-medium {
+		font-size: 12pt !important;
+		font-stretch: condensed;
+		font-weight: bold !important;
+		text-transform: uppercase !important;
 	}
 
 	.l-messages-left {
@@ -2290,7 +2749,7 @@
 	}
 
 	.l-messages-left .inbox__item {
-		background: #FFF;
+		background: var(--card-bg);
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
 	}
 
@@ -2298,7 +2757,7 @@
 	.l-messages-left .inboxItem:focus,
 	.l-messages-left .inboxItem.unread,
 	.l-messages-left .inboxItem.active {
-		background: #FFF !important;
+		background: var(--card-bg) !important;
 	}
 
 	.l-messages-left .g-scrollable {
@@ -2317,8 +2776,9 @@
 
 	/** DESCRIPTION : change the elements of the notification page **/
 	.l-fluid-fixed .l-main h1 {
-		background: rgba(255, 255, 255, .98) !important;
-		border-bottom: 1px solid #EBEBEB !important;
+		background: var(--card-bg) !important;
+		border-bottom: 1px solid var(--border-color) !important;
+		color: var(--primary-color) !important;
 		font-size: 17pt !important;
 		font-stretch: condensed !important;
 		padding: 20px 20px 22px 20px !important;
@@ -2330,7 +2790,7 @@
 	}
 
 	.l-fluid-fixed .l-main {
-		background: #FFF !important;
+		background: var(--card-bg) !important;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
 		padding: 20px 30px !important;
 		margin-top: 78px !important;
@@ -2365,8 +2825,27 @@
 		margin-left: 20px !important;
 	}
 
+	.ownActivity.large .ownActivity__user {
+		width: 100% !important;
+	}
+
+	.l-fluid-fixed .l-main  .userBadge.m-horizontal * {
+		color: var(--primary-color) !important;
+		font-size: 16pt !important;
+		font-stretch: condensed;
+	}
+
 	.l-fluid-fixed .l-main .relativeTime {
-		font-size: 11pt !important;
+		color: var(--secondary-color) !important;
+		font-size: 14pt !important;
+		font-stretch: condensed;
+		margin-top: -10px !important;
+	}
+
+	.commentTitle * {
+		color: var(--secondary-color) !important;
+		font-size: 16pt !important;
+		font-stretch: condensed;
 	}
 
 	.l-fluid-fixed .l-main .sc-button-small {
@@ -2402,13 +2881,6 @@
 	.commentForm.m-small .commentForm__input {
 		background: transparent !important;
 		border: none !important;
-	}
-
-}
-
-@-moz-document url("https://soundcloud.com/charts/top") {
-	* {
-		font-weight: normal;
 	}
 
 }
