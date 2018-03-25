@@ -27,8 +27,9 @@ Instruction
 
 <strong>Step 2 : Install the script </strong>
 <ol>
-<li> Via <a href="https://userstyles.org/styles/152849/jam-m-soundcloud-css">userstyles</a> : click the button <i>install Style</i> and it's done.</li>
-<li> Or <a href="https://pastebin.com/vxU1LnDN">manually</a> : create a new style in Stylish/Stylus and copy/paste the script in it. The script was written for Firefox Mozilla, that's why for Google Chrome and such, you'll have to click the button <i>Import from Mozilla.</i></li>
+<li> Via userstyles (<a href="https://userstyles.org/styles/152849/jam-m-light-soundcloud-css">light version</a> or <a href="https://userstyles.org/styles/157579/jam-m-dark-soundcloud-css">dark version</a>) : click the button <i>install Style</i> and it's done.</li>
+<li> Or manually (<a href="https://pastebin.com/vxU1LnDN">light version</a> or <a href="https://pastebin.com/A16fBep5">dark version</a>) : create a new style in Stylish/Stylus and copy/paste the script in it. The script was written for Firefox Mozilla, that's why for Google Chrome and such, you'll have to click the button <i>Import from Mozilla.</i></li>
+<li><b>(NEW) STYLUS ONLY</b> : Import <a href="https://mega.nz/#F!4TIBUTaK!68UQF79dszA23h5snooTRw">jam-m.json</a> in Stylus by clicking the button <i>Import Styles</i>. You can change theme by clicking the gear icon next to the script name in the managment styles page.</li>
 </ol>
 
 <strong>Step 3 : Install the font </strong>
