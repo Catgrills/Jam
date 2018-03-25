@@ -1462,6 +1462,7 @@
 
 	.l-listen-hero .soundTitle__title {
 		border-radius: 2px !important;
+		color: #FFF !important;
 		font-size: 17pt !important;
 		font-stretch: condensed;
 		padding: 12px 20px !important;
