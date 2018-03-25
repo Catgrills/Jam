@@ -72,6 +72,7 @@
 		color: var(--primary-color) !important;
 		font-size: 16pt !important;
 		font-stretch: condensed !important;
+		font-weight: normal !important;
 	}
 
 	.sc-type-h3.emptyNetworkPage__action {
@@ -192,6 +193,7 @@
 	.autocompleteItem * {
 		font-size: 14pt !important;
 		font-stretch: condensed !important;
+		line-height: 16pt !important;
 	}
 
 	.autocompleteItem__title {
@@ -205,6 +207,7 @@
 	.searchMenu__searchForText {
 		font-size: 14pt !important;
 		font-stretch: condensed !important;
+		font-weight: normal !important;
 	}
 
 	.autocompleteItem:last-child {
@@ -241,9 +244,10 @@
 	.conversationBadge__missingUsername,
 	.conversationBadge__time,
 	.conversationBadge__body.sc-truncate {
-		color: var(--primary-color) !important;
+		color: #FFF !important;
 		font-size: 14pt !important;
 		font-stretch: condensed !important;
+		font-weight: normal !important;
 	}
 
 	.profileMenu__list.profileMenu__listener.sc-list-nostyle {
@@ -290,14 +294,17 @@
 	.g-dark-bg .userBadge .userBadge__title *,
 	.g-dark-bg .userBadge .userBadge__title .sc-truncate {
 		font-size: 14pt !important;
+		font-weight: normal !important;
 	}
 
 	.g-dark-bg .ownActivity__content * {
 		font-size: 14pt !important;
+		font-weight: normal !important;
 	}
 
 	.g-dark .ownActivity .ownActivity__time {
 		font-size: 14pt !important;
+		font-weight: normal !important;
 		top: 5px !important;
 		right: 2px !important;
 	}
@@ -436,11 +443,11 @@
 	}
 
 	.playbackSoundBadge__lightLink {
-	    	color: var(--secondary-color) !important;        
+		color: var(--secondary-color) !important;
 	}
 
 	.playbackSoundBadge__titleLink {
-	    	color: var(--primary-color) !important;          
+		color: var(--primary-color) !important;
 	}
 
 	.playbackSoundBadge__titleLink,
@@ -1339,17 +1346,19 @@
 	}
 
 	.stationHeader__seed {
-		font-stretch: condensed;    
+		font-stretch: condensed;
+		font-weight: normal !important;
 	}
 
 	.stationHeader__type::before {
-	 	display: none !important;   
+		display: none !important;
 	}
 
 	.stationHeader__type,
 	.inThisStation * {
-	    font-size: 15pt !important;
-		font-stretch: condensed;           
+		font-size: 15pt !important;
+		font-stretch: condensed;
+		font-weight: normal !important;
 	}
 
 	.l-station-hero.l-inner-fullwidth .sc-button-like.sc-button.sc-button-small.sc-button-responsive {
@@ -1441,6 +1450,7 @@
 		border-radius: 2px !important;
 		font-size: 14pt !important;
 		font-stretch: condensed;
+		font-weight: normal !important;
 		padding: 8px 14px !important;
 		max-width: 100px !important;
 		position: absolute !important;
@@ -1454,6 +1464,9 @@
 
 	.systemPlaylistHero .fullHero__titleTextLineSmall span {
 		border-radius: 2px !important;
+		font-size: 16pt !important;
+		font-stretch: condensed;
+		font-weight: normal !important;
 		padding: 8px 14px !important;
 		position: absolute;
 		top: 30px !important;
@@ -1489,6 +1502,8 @@
 
 	.systemPlaylistHero .fullHero__titleTextLine.fullHero__titleTextLineBig span {
 		border-radius: 2px !important;
+		font-stretch: condensed;
+		font-weight: normal !important;
 		padding: 12px 20px !important;
 		position: absolute !important;
 		top: 80px !important;
@@ -1596,6 +1611,7 @@
 		color: var(--primary-color);
 		font-size: 14pt !important;
 		font-stretch: condensed;
+		font-weight: normal !important;
 	}
 
 	.l-hero-content .l-main {
@@ -1614,6 +1630,7 @@
 		color: var(--primary-color);
 		font-size: 14pt !important;
 		font-stretch: condensed;
+		font-weight: normal !important;
 	}
 
 	.systemPlaylistDetails__controls.sc-border-light-bottom {
@@ -1651,6 +1668,7 @@
 		color: var(--secondary-color);
 		font-size: 16pt !important;
 		font-stretch: condensed !important;
+		font-weight: normal !important;
 	}
 
 	.systemPlaylistDetails__controls .sc-button-medium.sc-button-queue::before,
@@ -1778,6 +1796,7 @@
 		color: var(--primary-color) !important;
 		font-size: 16pt !important;
 		font-stretch: condensed !important;
+		font-weight: normal !important;
 	}
 
 	.sc-ministats-medium::before {
@@ -1903,6 +1922,7 @@
 		color: var(--secondary-color) !important;
 		font-size: 14pt !important;
 		font-stretch: condensed;
+		font-weight: normal !important;
 		line-height: 18pt !important;
 	}
 
@@ -1936,6 +1956,7 @@
 		color: var(--primary-color);
 		font-size: 16pt !important;
 		font-stretch: condensed !important;
+		font-weight: normal !important;
 		margin-bottom: 20px !important;
 	}
 
@@ -2031,6 +2052,7 @@
 	.l-three-column.listen-about .listenInfo .listenInfo__releaseData {
 		font-size: 12pt !important;
 		font-stretch: condensed !important;
+		font-weight: normal !important;
 		text-align: center !important;
 		text-transform: uppercase !important;
 		margin-top: 10px !important;
@@ -2047,6 +2069,7 @@
 		color: var(--primary-color) !important;
 		font-size: 14pt !important;
 		font-stretch: condensed;
+		font-weight: normal !important;
 	}
 
 	.l-three-column.listen-about .sc-clearfix.sc-type-light.sc-truncate {
@@ -2220,6 +2243,7 @@
 		color: var(--secondary-color);
 		font-size: 14pt !important;
 		font-stretch: condensed;
+		font-weight: normal !important;
 	}
 
 	.searchOptions__filter,
@@ -2347,6 +2371,13 @@
 
 		/*** COLLECTION HEADER ***/
 		margin-top: 22px !important;
+	}
+
+	.collectionSection__optionHeading,
+	.collectionSection__optionHeading * {
+		font-size: 16pt;
+		font-stretch: condensed;
+		font-weight: normal !important;
 	}
 
 	.l-main .userNetwork,
@@ -2529,6 +2560,7 @@
 		color: var(--secondary-color) !important;
 		font-size: 16pt !important;
 		font-stretch: condensed;
+		font-weight: normal !important;
 	}
 
 	.badgeList__item .playableTile__playButton.audibleTile__playButton.g-z-index-content {
@@ -2539,13 +2571,8 @@
 	}
 
 	.badgeList__item .playButton.m-stretch {
-		border-radius: 1px !important;      
-		top: 1px !important;
-	}
-
-	.playableTile__playButton.audibleTile__playButton.g-z-index-content {
 		border-radius: 1px !important;
-		top: -1px !important;
+		top: 1px !important;
 		opacity: .7 !important;
 	}
 
@@ -2830,16 +2857,18 @@
 		width: 100% !important;
 	}
 
-	.l-fluid-fixed .l-main  .userBadge.m-horizontal * {
+	.l-fluid-fixed .l-main .userBadge.m-horizontal * {
 		color: var(--primary-color) !important;
 		font-size: 16pt !important;
 		font-stretch: condensed;
+		font-weight: normal !important;
 	}
 
 	.l-fluid-fixed .l-main .relativeTime {
 		color: var(--secondary-color) !important;
 		font-size: 14pt !important;
 		font-stretch: condensed;
+		font-weight: normal !important;
 		margin-top: -10px !important;
 	}
 
@@ -2847,6 +2876,7 @@
 		color: var(--secondary-color) !important;
 		font-size: 16pt !important;
 		font-stretch: condensed;
+		font-weight: normal !important;
 	}
 
 	.l-fluid-fixed .l-main .sc-button-small {
