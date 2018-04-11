@@ -747,7 +747,10 @@
 	.compactTrackListItem.clickToPlay.active,
 	.compactTrackListItem.clickToPlay:hover,
 	.compactTrackListItem.clickToPlay:focus,
-	.compactTrackListItem.clickToPlay:hover .compactTrackListItem__additional {
+	.compactTrackListItem.clickToPlay:hover .compactTrackListItem__additional,
+	.compactTrackListItem.clickToPlay.active .compactTrackListItem__additional,
+	.compactTrackListItem.clickToPlay:hover .compactTrackListItem__additional,
+	.compactTrackListItem.clickToPlay:focus .compactTrackListItem__additional {
 		background: transparent !important;
 		opacity: .8 !important;
 	}
@@ -2913,7 +2916,6 @@
 		background: transparent !important;
 		border: none !important;
 	}
-
 }
 
 
