@@ -30,39 +30,6 @@
 ==/UserStyle== */
 
 @-moz-document domain("soundcloud.com") {
-/*[[theme]]*/
-/* ==UserStyle==
-@name           Jam-M
-@namespace      https://github.com/Catgrills/Jam-M
-@version        1.0.1
-@description    An userstyle for Soundcloud called Jam-M.
-@author         Catgrills/Katgrills
-@preprocessor 	uso
-@var select theme 'Theme' {
-	"Light": `
-	:root {
-        --body-bg: #F0F1F5 !important;
-		--card-bg: #FFF !important;
-		--border-color: #EBEBEB !important;
-		--primary-color: #333 !important;
-		--secondary-color: #7E7E7E !important;
-		--filter: invert(0) !important;
-	}
-	`,
-	"Dark":`
-	:root {
-	    --body-bg: #33393E !important; 
-		--card-bg: #3C4249 !important;
-		--border-color: #3C3741 !important;
-		--primary-color: #FFF !important;
-		--secondary-color: #E1EFE6 !important;
-		--filter: brightness(0) invert(1) !important;
-	}
-	`
-}
-==/UserStyle== */
-
-@-moz-document domain("soundcloud.com") {
 	/*[[theme]]*/
 	/* GENERAL */
 
