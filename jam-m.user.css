@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Jam-M
 @namespace      https://github.com/Catgrills/Jam-M
-@version        1.0.0
+@version        1.0.1
 @description    An userstyle for Soundcloud called Jam-M.
 @author         Catgrills/Katgrills
 @preprocessor 	uso
@@ -1034,6 +1034,12 @@
 		font-stretch: condensed;
 		font-weight: normal !important;
 	}
+	
+    .modularHome__item .selectionModule .selectionPlaylistBanner .sc-list-nostyle.sc-clearfix * {
+        font-size: 14pt !important;
+        font-stretch: condensed !important;
+        font-weight: normal !important;
+    }
 
 	.selectionModule__socialProofLine * {
 		font-size: 14pt !important;
@@ -1128,6 +1134,7 @@
 	.l-vertical-bar .sc-button-message {
 		color: #60646D;
 		letter-spacing: .4px !important;
+		width: auto !important;
 	}
 
 	.l-vertical-bar .sc-button-edit {
