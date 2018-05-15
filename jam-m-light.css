@@ -76,6 +76,7 @@
 	.l-main .userNetwork .sc-button-share,
 	.l-messages-main .sc-button-small.sc-button-icon:not(.sc-button-stretch-icon)::before,
 	.l-messages-main .textfield__label.g-required-label,
+   	.modal__modal .soundTitle__tagContainer,
 	.moreMenu__link[href="/mobile"],
 	.moreMenu__link[href="/you/premier"],
 	.moreMenu__link.moreMenu__goUpsell,
@@ -97,6 +98,7 @@
 	.truncatedUserDescription.m-overflow.m-collapsed .truncatedUserDescription__wrapper::after {
 		display: none !important;
 	}
+
 
 	.emptyNetworkPage__headline,
 	.inSetsList__empty *,
@@ -236,6 +238,7 @@
 
 	.modal__modal .recipientChooser .tokenInput__wrapper,
 	.modal__modal .composeTextfield .textfield__input,
+	.shareContent__link input,
 	.profileSettings input,
 	.profileSettings textarea {
 
@@ -244,6 +247,7 @@
 		border: 1px solid var(--border-color) !important;
 		border-radius: 1px !important;
 		color: var(--primary-color) !important;
+		font-weight: normal !important;
 		padding: 10px !important;
 	}
 
@@ -346,6 +350,7 @@
 		margin-right: 6px !important;
 	}
 
+	.compactTrackListItem.sc-media.sc-border-light-bottom,
 	.profileSettings .g-form-section-head,
 	.profileSettings__formButtons.sc-button-toolbar.sc-border-light-top {
 		border: none;
@@ -3510,5 +3515,4 @@
 	}
 
 }
-
 
