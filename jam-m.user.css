@@ -2712,8 +2712,9 @@
 		padding: 20px 20px 22px 20px !important;
 		width: 100% !important;
 		position: fixed !important;
-		top: 46px !important;
+		top: 44px !important;
 		left: 0px !important;
+        z-index: 999 !important;
 	}
 
 	.l-fixed-top-one-column .l-top {
@@ -3269,6 +3270,7 @@
 		color: var(--primary-color);
 		font-size: 14pt;
 		font-stretch: condensed;
+        font-weight: normal !important;
 	}
 
 	.settingsMain__tabs.g-tabs.g-tabs-medium {
