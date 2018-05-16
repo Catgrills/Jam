@@ -58,7 +58,11 @@
 		padding-top: 110px !important;
 	}
 
+	.accountSettings .sc-button-medium::before,
 	.autocompleteItem__queryIcon,
+	.chartTracks .sc-ministats-medium.sc-ministats-plays::before,
+	.ownActivity__content .commentForm__avatar,
+	.commentItem.editing.m-isReply .commentForm__avatar,
 	.creatorsNavigation__onSoundCloud,
 	.dashbox__wrapper,
 	.dialog__arrow,
@@ -70,13 +74,42 @@
 	.g-tabs-link[href*="/pro"],
 	.g-tabs-link[href*="/pulse"],
 	.header__link.header__goUpsell,
+	.hintButton.sc-button.sc-button-small,	
+	.historicalPlays__item .compactTrackListItem__plays,
+	.historicalPlays__item .sc-ministats-group,
+	.historicalPlays__item .soundActions__purchaseLink,
 	.image.m-station::before,
+	.l-collection .playableTile__descriptionContainer .sc-icon.sc-icon-large,
+	.l-collection .sound__footerRight,
+	.l-fluid-fixed .l-main .ownActivity__title,
+	.l-fluid-fixed .l-main .ownActivity.large .userBadge__meta,
+	.l-fluid-fixed .l-main .sc-icon-medium.sc-icon-comment,
 	.l-footer,
-	.listenArtistInfo__copyright,
+	.listenArtistInfo__copyright,    
+	.l-listen-wrapper .l-about-row .g-link-collapse.collapsed::after,
+	.l-listen-wrapper .l-about-row .g-link-collapse::after,
+	.l-listen-wrapper .l-about-row .sc-button-medium::before,
+	.l-listen-wrapper .l-about-row .soundActions__purchaseLink,
+	.l-listen-wrapper .truncatedAudioInfo__wrapper::after,
+	.l-listen-wrapper .userBadge__stats,
+	.truncatedUserDescription.m-overflow .truncatedUserDescription__collapse:after,
 	.l-main .userNetwork .sc-button-share,
+	.l-messages-left .inbox__item::before,
 	.l-messages-main .sc-button-small.sc-button-icon:not(.sc-button-stretch-icon)::before,
 	.l-messages-main .textfield__label.g-required-label,
-   	.modal__modal .soundTitle__tagContainer,
+	.l-sidebar-right .sidebarModule .sc-ministats-group,
+	.l-sidebar-right .sidebarModule .soundBadge.compact .soundBadge__additional,
+	.l-station-hero.l-inner-fullwidth .sc-button-small.sc-button-like::before,
+	.l-vertical-bar .sc-button-medium.sc-button-medium::before,
+	.l-three-column.listen-about .listenInfo .listenInfo__copyright,
+	.l-three-column.listen-about .listenInfo .listenInfo__releaseTitle,
+	.l-three-column.listen-about .sc-ministats-group,
+	.modal__modal .soundTitle__tagContainer,
+	.l-listen-wrapper .commentsList .sc-clearfix .sc-icon,
+	.l-three-column .commentsList .sc-clearfix .sc-icon,
+	.l-search .l-fixed-left .searchOptions__footer,
+	.l-search .l-fixed-left .g-nav-item.g-nav-item-sounds.searchOptions__navigation-high_tier.searchOptions__navigationItem,
+	.l-search .l-fixed-left .sc-icon,
 	.moreMenu__link[href="/mobile"],
 	.moreMenu__link[href="/you/premier"],
 	.moreMenu__link.moreMenu__goUpsell,
@@ -88,23 +121,56 @@
 	.premiumIconLink,.profileMenu__link::after,
 	.profileMenu__link.profileMenu__premium,
 	.quotaBar__button,.sc-button-medium.sc-button-camera::before,
+	.sc-button-small.sc-button-icon:not(.sc-button-stretch-icon)::before,
+	.sc-button-small.sc-button-reply::before,
+    	.sc-promoted-icon.sc-promoted-icon-small.sc-text-light,
 	.sc-snippet-badge.sc-snippet-badge-medium.sc-snippet-badge-grey,
-	.sc-tag::before,.searchPremiumContentFooter,.searchList__item .sc-button-small::before,
+	.sc-tag::before,
+	.searchPremiumContentFooter,
+	.searchList__item .compactTrackListItem__plays,
+	.searchList__item .sc-button-small::before,
+	.searchList__item .sc-ministats-group,
+	.searchList__item .soundActions__purchaseLink,
 	.sidebarInfoBox__body,
+	.soundList__item .commentForm__wrapper.commentForm__transition,
+	.soundList__item .compactTrackListItem__plays,
 	.soundList__item .sc-button-small::before,
+	.soundList__item .sc-ministats-group,
+	.soundList__item .soundActions__purchaseLink,
+	.soundList__item .waveform__scene.waveform__layer canvas:nth-child(2),
+	.soundList__item .waveform__scene.waveform__layer canvas:nth-child(3),
+	.soundList__item .commentPopover,
+	.soundList__item .commentForm.commentForm__transition.m-small.visible,
+	.historicalPlays__item .commentForm.commentForm__transition.m-small.visible,
+	.searchList__item .commentForm.commentForm__transition.m-small.visible,
+	.historicalPlays__item canvas:nth-child(2),
+	.historicalPlays__item canvas:nth-child(3),
+	.historicalPlays__item .commentPopover,
+	.searchList__item canvas:nth-child(2),
+	.searchList__item canvas:nth-child(3),
+	.searchList__item .commentPopover,
+	.historicalPlays__item .commentForm__wrapper.commentForm__transition,
+	.searchList__item .commentForm__wrapper.commentForm__transition,
+	.stationHeader__type::before,
+	.systemPlaylistDetails__controls .sc-button-medium.sc-button-queue::before,
+	.systemPlaylistDetails__controls .sc-button-medium.sc-button-addtoset::before,
 	.historicalPlays__item .sc-button-small::before,
 	.tagsMain .tabs__tabs,.textfield__clear,
+	.trackItem:not(.m-disabled).hover .trackItem__additional,
+	.trackItem:not(.m-disabled).active .trackItem__additional,.trackItem__additional,
 	.truncatedAudioInfo__license,
-	.truncatedUserDescription.m-overflow.m-collapsed .truncatedUserDescription__wrapper::after {
+	.truncatedUserDescription.m-overflow.m-collapsed .truncatedUserDescription__wrapper::after,
+	.userMain .dropbar,
+	.userMain__content .sound__footerRight {
 		display: none !important;
 	}
-
 
 	.emptyNetworkPage__headline,
 	.inSetsList__empty *,
 	.searchList__emptyText,
 	.trackManager__noTracksHeadline,
-	.trackManager__noTracksAction {
+	.trackManager__noTracksAction,
+	.waveformWrapper.m-empty .waveformWrapper__empty {
 		color: var(--primary-color) !important;
 		font-size: 16pt !important;
 		font-stretch: condensed !important;
@@ -369,12 +435,14 @@
 		color: var(--primary-color);
 		font-size: 14pt !important;
 		font-stretch: condensed;
+		font-weight: normal !important;
 	}
 
 	.dialog p {
 		color: var(--secondary-color);
 		font-size: 14pt !important;
 		font-stretch: condensed;
+		font-weight: normal !important;
 	}
 
 	/* HEADER */
@@ -511,6 +579,10 @@
 	.conversationBadge__imageDeleted {
 		width: 40px !important;
 		height: 40px !important;
+	}
+
+	.notifications.g-dark .notifications__list .conversationBadge * {
+		color: #FFF !important;
 	}
 
 	.conversationBadge__missingUsername,
@@ -730,6 +802,7 @@
 	.playControls .sc-button-small.sc-button-like::before,
 	.playbackSoundBadge__showQueue {
 		background-size: 21px 21px;
+		display: block !important;
 	}
 
 	.sc-button-like.playbackSoundBadge__like[title="Like"],
@@ -892,34 +965,17 @@
 		line-height: 25pt !important;
 	}
 
-	.soundList__item .waveform__scene.waveform__layer canvas:nth-child(2),
-	.soundList__item .waveform__scene.waveform__layer canvas:nth-child(3),
-	.soundList__item .commentPopover,
-	.historicalPlays__item canvas:nth-child(2),
-	.historicalPlays__item canvas:nth-child(3),
-	.historicalPlays__item .commentPopover,
-	.searchList__item canvas:nth-child(2),
-	.searchList__item canvas:nth-child(3),.searchList__item .commentPopover {
+	.visualSound__wrapper.g-all-transitions-300 {
 
 		/*** STREAM SOUND LIST ITEM VISUALIZER ***/
-		display: none !important;
-	}
-
-	.visualSound__wrapper.g-all-transitions-300 {
 		margin-left: 0px !important;
-	}
-
-	.soundList__item .commentForm.commentForm__transition.m-small.visible,
-	.historicalPlays__item .commentForm.commentForm__transition.m-small.visible,
-	.searchList__item .commentForm.commentForm__transition.m-small.visible {
-
-		/*** STREAM SOUND LIST ITEM COMMENT ***/
-		display: none !important;
 	}
 
 	.soundList__item .sc-button-group .sc-button-small,
 	.historicalPlays__item .sc-button-group .sc-button-small,
 	.searchList__item .sc-button-group .sc-button-small {
+
+		/*** STREAM SOUND LIST ITEM COMMENT ***/
 		background: #212121;
 		border: none !important;
 		border-radius: 2px !important;
@@ -976,15 +1032,6 @@
 		background: #60646D !important;
 	}
 
-	.soundList__item .soundActions__purchaseLink,
-	.historicalPlays__item .soundActions__purchaseLink,
-	.searchList__item .soundActions__purchaseLink,
-	.soundList__item .commentForm__wrapper.commentForm__transition,
-	.historicalPlays__item .commentForm__wrapper.commentForm__transition,
-	.searchList__item .commentForm__wrapper.commentForm__transition {
-		display: none !important;
-	}
-
 	.sound__footer.noDivider {
 		position: absolute !important;
 		bottom: -65px !important;
@@ -1026,14 +1073,12 @@
 		font-stretch: condensed;
 	}
 
-	.compactTrackList.expanded .compactTrackList__listContainer {
-		width: 100% !important;
+	.compactTrackListItem__content.sc-truncate {
+		max-width: 615px !important;
 	}
 
-	.soundList__item .compactTrackListItem__plays,
-	.historicalPlays__item .compactTrackListItem__plays,
-	.searchList__item .compactTrackListItem__plays {
-		display: none !important;
+	.compactTrackList.expanded .compactTrackList__listContainer {
+		width: 100% !important;
 	}
 
 	.compactTrackList__moreLink {
@@ -1072,12 +1117,6 @@
 		padding: 10px 12px 9px 12px !important;
 	}
 
-	.soundList__item .sc-ministats-group,
-	.historicalPlays__item .sc-ministats-group,
-	.searchList__item .sc-ministats-group {
-		display: none !important;
-	}
-
 	.commentFormDisabled.small.visible {
 
 		/*** STREAM SOUND LIST COMMENTS DISABLED ***/
@@ -1093,7 +1132,7 @@
 	.l-sidebar-right {
 
 		/*** STREAM SIDEBAR ***/
-		top: 78px !important;
+		top: 84px !important;
 		margin-right: 40px !important;
 	}
 
@@ -1194,10 +1233,6 @@
 		border-radius: 50% !important;
 	}
 
-	.l-sidebar-right .sidebarModule .sc-ministats-group {
-		display: none !important;
-	}
-
 	.l-sidebar-right .sidebarModule .sc-button-large.sc-button-play,
 	.l-sidebar-right .sidebarModule .sc-button-large.sc-button-pause {
 		background-color: #FF9F55 !important;
@@ -1207,10 +1242,6 @@
 		top: -1px !important;
 		left: -1px !important;
 		opacity: .7 !important;
-	}
-
-	.l-sidebar-right .sidebarModule .soundBadge.compact .soundBadge__additional {
-		display: none !important;
 	}
 
 	/* CHART */
@@ -1272,10 +1303,6 @@
 	.chartTrack:hover {
 		background: transparent;
 		opacity: .8;
-	}
-
-	.chartTracks .sc-ministats-medium.sc-ministats-plays::before {
-		display: none !important;
 	}
 
 	/* DISCOVER */
@@ -1465,16 +1492,6 @@
 		z-index: 999 !important;
 	}
 
-	.l-vertical-bar .sc-button-medium.sc-button-medium::before {
-		display: none;
-	}
-
-	.userMain .dropbar {
-
-		/*** USER DROP BAR ***/
-		display: none !important;
-	}
-
 	.l-user-hero {
 
 		/*** USER BANNER ***/
@@ -1602,10 +1619,6 @@
 		margin-left: -200px !important;
 	}
 
-	.userMain__content .sound__footerRight {
-		display: none !important;
-	}
-
 	.userSidebar {
 
 		/*** USER SIDEBAR ***/
@@ -1712,10 +1725,6 @@
 		font-weight: normal !important;
 	}
 
-	.stationHeader__type::before {
-		display: none !important;
-	}
-
 	.stationHeader__type,
 	.inThisStation * {
 		font-size: 15pt !important;
@@ -1739,10 +1748,6 @@
 		text-indent: 0px !important;
 		text-transform: uppercase !important;
 		margin-right: 6px !important;
-	}
-
-	.l-station-hero.l-inner-fullwidth .sc-button-small.sc-button-like::before {
-		display: none;
 	}
 
 	.listenContent.l-inner-fullwidth.listenContent__sound .soundTitle.listenContext .soundTitle__playButton {
@@ -2033,11 +2038,6 @@
 		font-weight: normal !important;
 	}
 
-	.systemPlaylistDetails__controls .sc-button-medium.sc-button-queue::before,
-	.systemPlaylistDetails__controls .sc-button-medium.sc-button-addtoset::before {
-		display: none;
-	}
-
 	.l-hero-content .l-main .systemPlaylistTrackList {
 		border: 1px solid var(--border-color) !important;
 	}
@@ -2121,10 +2121,6 @@
 		margin-right: 6px !important;
 	}
 
-	.l-listen-wrapper .l-about-row .sc-button-medium::before {
-		display: none;
-	}
-
 	.l-listen-wrapper .l-about-row .sc-button-like {
 		background: #2CC990 !important;
 	}
@@ -2144,10 +2140,6 @@
 	.l-listen-wrapper .l-about-row .sc-button-more,
 	.l-listen-wrapper .l-about-row .sc-button-queue {
 		background: #60646D !important;
-	}
-
-	.l-listen-wrapper .l-about-row .soundActions__purchaseLink {
-		display: none !important;
 	}
 
 	.l-listen-wrapper .l-about-row .listenEngagement__stats {
@@ -2207,10 +2199,6 @@
 		overflow: visible !important;
 	}
 
-	.l-listen-wrapper .userBadge__stats {
-		display: none !important;
-	}
-
 	.l-listen-wrapper .userBadge__title .sc-truncate {
 		color: var(--primary-color) !important;
 		font-size: 15pt !important;
@@ -2232,18 +2220,9 @@
 		text-transform: lowercase !important;
 	}
 
-	.l-listen-wrapper .l-about-row .g-link-collapse.collapsed::after,
-	.l-listen-wrapper .l-about-row .g-link-collapse::after,
-	.truncatedUserDescription.m-overflow .truncatedUserDescription__collapse:after {
-		display: none !important;
-	}
-
-	.l-listen-wrapper .truncatedAudioInfo__wrapper::after {
-		display: none;
-	}
-
-	.l-listen-wrapper .sc-tag.sc-tag-medium {
-		background: #008891 !important;
+	.l-listen-wrapper .sc-tag.sc-tag-medium,
+	.soundTags.listenDetails__tags .sc-tag.sc-tag-medium {
+		background: #083D77 !important;
 		border: transparent !important;
 		border-radius: 2px !important;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
@@ -2252,6 +2231,11 @@
 		font-weight: bold !important;
 		padding: 8px 16px !important;
 		text-transform: uppercase;
+	}
+
+	.soundTags.listenDetails__tags .sc-tag.sc-tag-medium * {
+		color: #FFF;
+		font-weight: bold !important;
 	}
 
 	.l-listen-wrapper .listenDetails__trackList {
@@ -2274,11 +2258,6 @@
 	.trackItem.hover,
 	.trackItem.active {
 		background: transparent !important;
-	}
-
-	.trackItem:not(.m-disabled).hover .trackItem__additional,
-	.trackItem:not(.m-disabled).active .trackItem__additional,.trackItem__additional {
-		display: none !important;
 	}
 
 	.truncatedAudioInfo .listenInfo__releaseTitle,
@@ -2343,11 +2322,6 @@
 		margin-left: 20px !important;
 	}
 
-	.l-listen-wrapper .commentsList .sc-clearfix .sc-icon,
-	.l-three-column .commentsList .sc-clearfix .sc-icon {
-		display: none !important;
-	}
-
 	.l-listen-wrapper .commentsList .commentsList__item .commentItem__avatar .sc-artwork,
 	.l-three-column .commentsList .commentsList__item .commentItem__avatar .sc-artwork {
 		border: none !important;
@@ -2392,6 +2366,8 @@
 	}
 
 	.commentItem.editing.m-isReply .commentForm__wrapper.commentForm__transition {
+		background: var(--card-bg-2);
+		border-color: var(--border-color);
 		padding: 18px 0px !important;
 		overflow: hidden;
 	}
@@ -2409,11 +2385,6 @@
 		margin-left: 40px;
 	}
 
-	.commentItem.editing.m-isReply .commentForm__avatar,
-	.sc-button-small.sc-button-reply::before {
-		display: none !important;
-	}
-
 	.l-three-column.listen-about .listenNetworkSidebar {
 
 		/*** TRACK SIDEBAR ***/
@@ -2429,11 +2400,6 @@
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
 		padding: 20px !important;
 		width: 100% !important;
-	}
-
-	.l-three-column.listen-about .listenInfo .listenInfo__copyright,
-	.l-three-column.listen-about .listenInfo .listenInfo__releaseTitle {
-		display: none;
 	}
 
 	.l-three-column.listen-about .listenInfo .listenInfo__releaseData {
@@ -2465,10 +2431,6 @@
 		margin-top: -3px !important;
 	}
 
-	.l-three-column.listen-about .sc-ministats-group {
-		display: none !important;
-	}
-
 	.l-three-column.listen-about .sc-button-follow {
 		background: #FF9F55 !important;
 		border: none !important;
@@ -2497,10 +2459,10 @@
 		/*** SEARCH TITLE ***/
 		background: var(--card-bg) !important;
 		border-bottom: 1px solid var(--border-color) !important;
-		padding: 20px 20px 22px 20px !important;
+		padding: 20px 20px 21px 20px !important;
 		width: 100% !important;
 		position: fixed !important;
-		top: 46px !important;
+		top: 45px !important;
 		right: 0px !important;
 		left: 0px !important;
 	}
@@ -2630,12 +2592,6 @@
 		color: var(--primary-color);
 	}
 
-	.l-search .l-fixed-left .searchOptions__footer,
-	.l-search .l-fixed-left .g-nav-item.g-nav-item-sounds.searchOptions__navigation-high_tier.searchOptions__navigationItem,
-	.l-search .l-fixed-left .sc-icon {
-		display: none !important;
-	}
-
 	.l-search .l-fixed-left .sc-border-light-top,
 	.l-search .l-fixed-left .searchTags__title,
 	.searchOptions__filterCategory-text {
@@ -2678,7 +2634,7 @@
 		/*** COLLECTION NAVIGATION BAR ***/
 		background: var(--card-bg) !important;
 		border-bottom: 1px solid var(--border-color) !important;
-		padding: 15px 20px 18px 20px !important;
+		padding: 15px 20px 19px 20px !important;
 		position: fixed !important;
 		top: 16px !important;
 		right: 0px !important;
@@ -2855,10 +2811,6 @@
 		font-weight: normal !important;
 	}
 
-	.l-collection .sound__footerRight {
-		display: none !important;
-	}
-
 	.l-collection .collectionSection__filterText .textfield__input,
 	.sc-button-dropdown.sc-button.sc-button-medium.sc-button-responsive {
 		background: var(--card-bg);
@@ -2902,10 +2854,6 @@
 	.collection.m-overview .collection__section:not(:last-child) {
 		border-bottom: 1px dotted #BEBEBE !important;
 		margin-bottom: 10px !important;
-	}
-
-	.l-collection .playableTile__descriptionContainer .sc-icon.sc-icon-large {
-		display: none !important;
 	}
 
 	.l-collection .userBadgeListItem__action .sc-button-follow,
@@ -3241,10 +3189,6 @@
 		margin-top: -30px !important;
 	}
 
-	.l-messages-left .inbox__item::before {
-		display: none !important;
-	}
-
 	/* SETTINGS */
 
 	/** DESCRIPTION : change the elements of the settings page **/
@@ -3290,11 +3234,6 @@
 		padding-left: 10px;
 		text-indent: 0px !important;
 		text-transform: uppercase;
-	}
-
-	.hintButton.sc-button.sc-button-small,
-	.sc-button-small.sc-button-icon:not(.sc-button-stretch-icon)::before,.accountSettings .sc-button-medium::before {
-		display: none;
 	}
 
 	.settingsMain__wrapper input,
@@ -3391,9 +3330,10 @@
 		padding: 20px 20px 22px 20px !important;
 		width: 100% !important;
 		position: fixed !important;
-		top: 46px !important;
+		top: 44px !important;
 		right: 0px !important;
 		left: 0px !important;
+		z-index: 999 !important;
 	}
 
 	.l-fluid-fixed .l-main {
@@ -3409,10 +3349,6 @@
 		border-top: none !important;
 	}
 
-	.l-fluid-fixed .l-main .ownActivity__title {
-		display: none !important;
-	}
-
 	.l-fluid-fixed .l-main .ownActivity.large .ownActivity__top {
 		border: none !important;
 		margin-top: 20px !important;
@@ -3421,11 +3357,6 @@
 
 	.l-fluid-fixed .l-main .ownActivity.large .ownActivity__user {
 		border-right: none !important;
-	}
-
-	.l-fluid-fixed .l-main .ownActivity.large .userBadge__meta,
-	.l-fluid-fixed .l-main .sc-icon-medium.sc-icon-comment {
-		display: none !important;
 	}
 
 	.l-fluid-fixed .l-main .ownActivity__bottom {
@@ -3481,10 +3412,6 @@
 		background: var(--card-bg-2) !important;
 		border: 1px solid var(--border-color) !important;
 		padding: 15px 0px 18px 0px !important;
-	}
-
-	.commentForm__avatar {
-		display: none;
 	}
 
 	.commentForm.m-small .commentForm__inputWrapper * {
