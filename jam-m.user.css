@@ -144,7 +144,7 @@
 	.quotaBar__button,.sc-button-medium.sc-button-camera::before,
 	.sc-button-small.sc-button-icon:not(.sc-button-stretch-icon)::before,
 	.sc-button-small.sc-button-reply::before,
-    .sc-promoted-icon.sc-promoted-icon-small.sc-text-light,
+    	.sc-promoted-icon.sc-promoted-icon-small.sc-text-light,
 	.sc-snippet-badge.sc-snippet-badge-medium.sc-snippet-badge-grey,
 	.sc-tag::before,
 	.searchPremiumContentFooter,
@@ -191,7 +191,7 @@
 	.searchList__emptyText,
 	.trackManager__noTracksHeadline,
 	.trackManager__noTracksAction,
-    .waveformWrapper.m-empty .waveformWrapper__empty {
+	.waveformWrapper.m-empty .waveformWrapper__empty {
 		color: var(--primary-color) !important;
 		font-size: 16pt !important;
 		font-stretch: condensed !important;
@@ -456,14 +456,14 @@
 		color: var(--primary-color);
 		font-size: 14pt !important;
 		font-stretch: condensed;
-        font-weight: normal !important;
+		font-weight: normal !important;
 	}
 
 	.dialog p {
 		color: var(--secondary-color);
 		font-size: 14pt !important;
 		font-stretch: condensed;
-        font-weight: normal !important;
+		font-weight: normal !important;
 	}
 
 	/* HEADER */
@@ -1093,10 +1093,10 @@
 		font-size: 14pt !important;
 		font-stretch: condensed;
 	}
-    
-    .compactTrackListItem__content.sc-truncate {
-        max-width: 580px !important;
-    }
+
+	.compactTrackListItem__content.sc-truncate {
+		max-width: 615px !important;
+	}
 
 	.compactTrackList.expanded .compactTrackList__listContainer {
 		width: 100% !important;
@@ -3463,3 +3463,5 @@
 	}
 
 }
+
+
