@@ -819,6 +819,12 @@
 
 	.volume__sliderWrapper {
 		background-color: var(--card-bg) !important;
+		border-color: var(--border-color) !important;
+	}
+
+	.volume__sliderWrapper:before,
+	.volume__sliderWrapper:after {
+		border-color: var(--card-bg) !important;
 	}
 
 	.volume[data-level="1"] .volume__button,
