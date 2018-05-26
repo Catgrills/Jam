@@ -862,7 +862,7 @@
 	.playbackSoundBadge__actions {
 
 		/*** PLAYER ACTION BUTTONS ***/
-		margin-left: 30px;
+		margin-left: 10px;
 	}
 
 	.playControls .sc-button-small.sc-button-selected.sc-button-like::before,
