@@ -194,7 +194,7 @@
 		background: var(--card-bg) !important;
 		border: none !important;
 		box-shadow: none !important;
-		padding: 15px !important;
+		padding: 10px 15px 15px 15px !important;
 	}
 
 	.gritter-item * {
@@ -1589,7 +1589,7 @@
 		font-size: 16pt;
 		font-stretch: condensed;
 		font-weight: normal !important;
-		padding: 10px 13px !important;
+		padding: 10px 13px 13px 13px !important;
 		margin-bottom: 10px !important;
 	}
 
@@ -1949,15 +1949,22 @@
 	}
 
 	.l-listen-hero .inPlaylist {
-		background: #F9AE74 !important;
+		background: #16A085 !important;
 		border-radius: 2px !important;
 		color: #FFF !important;
+        font-size: 14pt;
+        font-stretch: condensed;
+        font-weight: normal;
 		padding: 18px 25px !important;
 		position: absolute !important;
 		margin-top: 100px !important;
 		left: -69px !important;
 	}
 
+    .g-type-shrinkwrap-block.g-type-shrinkwrap-large-secondary {
+        background: transparent;
+    }
+    
 	.l-listen-hero .sc-tag {
 		background: #60646D !important;
 		border: transparent !important;
@@ -2000,7 +2007,7 @@
 
 	.l-listen-hero .genericTrackCount,
 	.systemPlaylistHero .genericTrackCount {
-		background-color: #F9AE74 !important;
+		background-color: #16A085 !important;
 		border-radius: 2px !important;
 		font-stretch: condensed !important;
 		height: 120px !important;
@@ -2289,7 +2296,7 @@
 
 	.l-listen-wrapper .sc-tag.sc-tag-medium,
 	.soundTags.listenDetails__tags .sc-tag.sc-tag-medium {
-		background: #083D77 !important;
+		background: #2980B9 !important;
 		border: transparent !important;
 		border-radius: 2px !important;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
@@ -3476,7 +3483,7 @@
 	}
 
 	.commentForm.commentForm__transition.m-small.visible .commentForm__wrapper.commentForm__transition {
-		background: var(--card-bg-2) !important;
+		background: var(--car-bg-2) !important;
 		border: 1px solid var(--border-color) !important;
 		padding: 15px 0px 18px 0px !important;
 	}
@@ -3509,5 +3516,3 @@
 	}
 
 }
-
-
