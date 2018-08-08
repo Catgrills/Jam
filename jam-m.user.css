@@ -571,6 +571,15 @@
 		text-transform: uppercase;
 	}
 
+	.header__userNavUsername {
+        color: #FFF !important;
+        font-size: 12pt !important;
+        font-stretch: condensed !important;
+        font-weight: bold !important;
+        text-transform: uppercase !important;
+        margin-top: -1px !important;
+    }
+
 	.left.header__navWrapper * {
 		font-size: 12pt !important;
 		font-stretch: condensed !important;
@@ -1521,7 +1530,7 @@
 	}
 
 	.l-vertical-bar .sc-button {
-		height: 32px !important;
+		height: 34px !important;
 		line-height: 27px !important;
 	}
 
@@ -2205,9 +2214,9 @@
 		font-size: 12pt !important;
 		font-stretch: condensed !important;
 		font-weight: bold !important;
-		line-height: 7.5px !important;
-		height: 38px !important;
+		height: 39px !important;
 		min-width: 45px !important;
+		padding-top: 0px;
 		padding-right: 15px;
 		padding-left: 15px;
 		text-indent: 0px !important;
