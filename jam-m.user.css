@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Jam-M
 @namespace      https://github.com/Catgrills/Jam-M
-@version        1.0.7
+@version        1.0.8
 @description    An userstyle for Soundcloud called Jam-M.
 @author         Catgrills/Katgrills
 @preprocessor 	uso
@@ -34,7 +34,9 @@
 ==/UserStyle== */
 
 @-moz-document domain("soundcloud.com") {
-/*[[theme]]*/
+
+	/*[[theme]]*/
+
 	/* GENERAL */
 
 	/** DESCRIPTION : change the elements of all page **/
@@ -1606,6 +1608,7 @@
 
 	.profileHeaderInfo__content h3,
 	.profileHeaderInfo__content h4 {
+		background: #212121 !important;
 		border-radius: 2px !important;
 		font-size: 16pt;
 		font-stretch: condensed;
@@ -1982,7 +1985,7 @@
 	.g-type-shrinkwrap-block.g-type-shrinkwrap-large-secondary {
 		background: transparent;
 	}
-	
+
 	.l-listen-hero .sc-tag {
 		background: #60646D !important;
 		border: transparent !important;
@@ -2020,7 +2023,7 @@
 	}
 
 	.listenNetworkSidebar {
-		margin-top: 293px !important;
+		margin-top: 286px !important;
 	}
 
 	.l-listen-hero .genericTrackCount,
@@ -2240,7 +2243,7 @@
 
 	.l-listen-wrapper .l-about-row .listenEngagement__stats * {
 		color: var(--primary-color) !important;
-		font-size: 16pt !important;
+		font-size: 14pt !important;
 		font-stretch: condensed !important;
 		font-weight: normal !important;
 	}
@@ -3534,4 +3537,3 @@
 	}
 
 }
-
