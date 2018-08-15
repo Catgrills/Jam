@@ -1,13 +1,13 @@
 # Jam-M
 
-<img src="preview_2_jam-m.png" width="100%">
+<img src="preview.png" width="100%">
 
-Preview of <i>Jam-M</i>.
+Preview of <i>Jam</i>.
 
 About
 -------------------------------
 
-<i>Jam-M</i> is an user style for <i>Soundcloud</i>.
+<i>Jam</i> is an user style for <i>Soundcloud</i>.
 
 User styles are CSS code designed to alter the appearance of one, some, or all sites.
 
@@ -22,8 +22,7 @@ Instruction
 + for <a href="https://addons.opera.com/en-gb/extensions/details/stylus/?display=en">Opera</a>
 
 <strong>Step 2 : Install the script </strong>
-+ Via <b>userstyles</b> : <a href="https://userstyles.org/styles/157579/jam-m-dark-soundcloud-css">Dark theme</a> or <a href="https://userstyles.org/styles/152849/jam-m-light-soundcloud-css">Light theme</a>
-+ Or directly with <b>Stylus</b> : <a href="https://raw.githubusercontent.com/Catgrills/Jam-M/master/jam-m.user.css">click here</a>
++ Directly with <b>Stylus</b> : <a href="https://raw.githubusercontent.com/Catgrills/Jam/master/soundcloud.user.css">click here</a>
 
 <strong>Step 3 : Install the font </strong>
 
