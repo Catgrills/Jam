@@ -1,4 +1,4 @@
-# Jam-M
+# Jam
 
 <img src="preview.png" width="100%">
 
