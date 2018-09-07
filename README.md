@@ -7,7 +7,7 @@ Preview of <i>Jam</i>.
 About
 -------------------------------
 
-<i>Jam</i> is an user style for <i>Soundcloud</i>.
+<i>Jam</i> is a user style for <i>Soundcloud</i>.
 
 User styles are CSS code designed to alter the appearance of one, some, or all sites.
 
