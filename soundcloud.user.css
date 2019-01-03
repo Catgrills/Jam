@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Jam
 @namespace      https://github.com/Catgrills/Jam
-@version        1.0.8
+@version        1.1.0
 @description    An user style for Soundcloud called Jam.
 @author         Catgrills/Katgrills
 @preprocessor 	uso
@@ -32,7 +32,6 @@
 	`
 }
 ==/UserStyle== */
-
 @-moz-document domain("soundcloud.com") {
 
 	/*[[theme]]*/
@@ -70,7 +69,7 @@
 		position: absolute !important;
 		left: 0px !important;
 		right: 0px !important;
-		margin: auto !important;
+		margin: -50px auto !important;
 	}
 
 	.l-fluid-fixed .sc-border-light-right {
@@ -97,7 +96,7 @@
 	.g-tabs-link[href*="/pro"],
 	.g-tabs-link[href*="/pulse"],
 	.header__link.header__goUpsell,
-	.hintButton.sc-button.sc-button-small,	
+	.hintButton.sc-button.sc-button-small,
 	.historicalPlays__item .compactTrackListItem__plays,
 	.historicalPlays__item .sc-ministats-group,
 	.historicalPlays__item .soundActions__purchaseLink,
@@ -108,7 +107,7 @@
 	.l-fluid-fixed .l-main .ownActivity.large .userBadge__meta,
 	.l-fluid-fixed .l-main .sc-icon-medium.sc-icon-comment,
 	.l-footer,
-	.listenArtistInfo__copyright,    
+	.listenArtistInfo__copyright,
 	.l-listen-wrapper .l-about-row .g-link-collapse.collapsed::after,
 	.l-listen-wrapper .l-about-row .g-link-collapse::after,
 	.l-listen-wrapper .l-about-row .sc-button-medium::before,
@@ -141,11 +140,13 @@
 	.moreMenu__link[href="/you/subscriptions"],
 	.moreMenu__link[href*="blog"],
 	.paging-eof,
-	.premiumIconLink,.profileMenu__link::after,
+	.premiumIconLink,
+	.profileMenu__link::after,
 	.profileMenu__link.profileMenu__premium,
 	.queue__hide.sc-button.sc-button-nostyle.sc-ir,
 	.queue__itemWrapper.queue__fallback,
-	.quotaBar__button,.sc-button-medium.sc-button-camera::before,
+	.quotaBar__button,
+	.sc-button-medium.sc-button-camera::before,
 	.sc-button-small.sc-button-icon:not(.sc-button-stretch-icon)::before,
 	.sc-button-small.sc-button-reply::before,
 	.sc-promoted-icon.sc-promoted-icon-small.sc-text-light,
@@ -180,13 +181,10 @@
 	.systemPlaylistDetails__controls .sc-button-medium.sc-button-queue::before,
 	.systemPlaylistDetails__controls .sc-button-medium.sc-button-addtoset::before,
 	.historicalPlays__item .sc-button-small::before,
-	.tagsMain .tabs__tabs,.textfield__clear,
+	.tagsMain .tabs__tabs,
+	.textfield__clear,
 	.trackItem:not(.m-disabled).hover .trackItem__additional,
-	.trackItem:not(.m-disabled).active .trackItem__additional,.trackItem__additional,
-	.truncatedAudioInfo__license,
-	.truncatedUserDescription.m-overflow.m-collapsed .truncatedUserDescription__wrapper::after,
-	.userMain .dropbar,
-	.userMain__content .sound__footerRight {
+	.trackItem:not(.m-disabled).active .trackItem__additional,.trackItem__additional,.truncatedAudioInfo__license,.truncatedUserDescription.m-overflow.m-collapsed .truncatedUserDescription__wrapper::after,.userMain .dropbar,.userMain__content .sound__footerRight {
 		display: none !important;
 	}
 
@@ -200,6 +198,14 @@
 		font-size: 16pt !important;
 		font-stretch: condensed !important;
 		font-weight: normal !important;
+	}
+
+	.emptyNetworkPage__subheadline,
+	.emptyNetworkPage__link {
+		font-size: 14pt;
+		font-stretch: condensed;
+		font-weight: normal !important;
+		margin-top: 8px;
 	}
 
 	.sc-type-h3.emptyNetworkPage__action {
@@ -572,13 +578,13 @@
 	}
 
 	.header__userNavUsername {
-        color: #FFF !important;
-        font-size: 12pt !important;
-        font-stretch: condensed !important;
-        font-weight: bold !important;
-        text-transform: uppercase !important;
-        margin-top: -1px !important;
-    }
+		color: #FFF !important;
+		font-size: 12pt !important;
+		font-stretch: condensed !important;
+		font-weight: bold !important;
+		text-transform: uppercase !important;
+		margin-top: -1px !important;
+	}
 
 	.left.header__navWrapper * {
 		font-size: 12pt !important;
@@ -609,6 +615,7 @@
 		font-size: 14pt !important;
 		font-stretch: condensed !important;
 		font-weight: normal !important;
+		padding-bottom: 8px !important;
 	}
 
 	.newItemBadge.newItems__some {
@@ -933,7 +940,6 @@
 	.l-tabs {
 		background: var(--card-bg) !important;
 		border-bottom: 1px solid var(--border-color) !important;
-		padding: 15px 20px !important;
 		width: 100% !important;
 		text-align: center !important;
 		position: fixed !important;
@@ -1062,6 +1068,16 @@
 		font-stretch: condensed !important;
 		min-height: 30px !important;
 		line-height: 25pt !important;
+	}
+
+	.releaseDataCompact {
+		font-size: 16pt !important;
+		font-stretch: condensed !important;
+		font-weight: normal !important;
+	}
+
+	.releaseDataCompact * {
+		font-weight: normal;
 	}
 
 	.visualSound__wrapper.g-all-transitions-300 {
