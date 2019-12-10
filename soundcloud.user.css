@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Jam
 @namespace      https://github.com/Catgrills/Jam
-@version        1.1.0
+@version        1.1.1
 @description    An user style for Soundcloud called Jam.
 @author         Catgrills/Katgrills
 @preprocessor 	uso
@@ -41,6 +41,7 @@
 	/** DESCRIPTION : change the elements of all page **/
 	* {
 		font-family: "Roboto", "ぼくたちのゴシック２ボールド", "BM YEONSUNG" !important;
+        	font-weight: normal;
 	}
 
 	*::-moz-focus-inner {
@@ -132,6 +133,7 @@
 	.l-search .l-fixed-left .searchOptions__footer,
 	.l-search .l-fixed-left .g-nav-item.g-nav-item-sounds.searchOptions__navigation-high_tier.searchOptions__navigationItem,
 	.l-search .l-fixed-left .sc-icon,
+    	.mobileApps,
 	.moreMenu__link[href="/mobile"],
 	.moreMenu__link[href="/you/premier"],
 	.moreMenu__link.moreMenu__goUpsell,
@@ -147,7 +149,7 @@
 	.queue__itemWrapper.queue__fallback,
 	.quotaBar__button,
 	.sc-button-medium.sc-button-camera::before,
-	.sc-button-small.sc-button-icon:not(.sc-button-stretch-icon)::before,
+    	.sc-button-small.sc-button-follow::before,
 	.sc-button-small.sc-button-reply::before,
 	.sc-promoted-icon.sc-promoted-icon-small.sc-text-light,
 	.sc-snippet-badge.sc-snippet-badge-medium.sc-snippet-badge-grey,
@@ -188,6 +190,7 @@
 		display: none !important;
 	}
 
+    	.streamSounds__empty *,
 	.emptyNetworkPage__headline,
 	.inSetsList__empty *,
 	.searchList__emptyText,
@@ -1232,6 +1235,11 @@
 		padding: 10px 12px 9px 12px !important;
 	}
 
+	.searchList__item .soundTitle__tag *,
+	.soundList__item .soundTitle__tag.sc-tag.sc-tag-small * {
+		font-weight: bold !important;
+	}
+    
 	.commentFormDisabled.small.visible {
 
 		/*** STREAM SOUND LIST COMMENTS DISABLED ***/
@@ -1423,6 +1431,8 @@
 	/* DISCOVER */
 
 	/** DESCRIPTION : change the elements of the discover page **/
+    .mixedSelectionModule__title,
+    .mixedSelectionModule__titleText,
 	.selectionModule__titleText {
 		color: var(--primary-color) !important;
 		font-size: 17pt !important;
@@ -1430,10 +1440,12 @@
 		font-weight: normal !important;
 	}
 
+    .mixedSelectionModule,
 	.selectionModule {
 		border: none !important;
 	}
 
+    .mixedSelectionModule__description.sc-type-small.sc-type-light,
 	.selectionModule__description.sc-type-small.sc-type-light {
 		color: var(--secondary-color) !important;
 		font-size: 15pt !important;
@@ -1441,12 +1453,18 @@
 		font-weight: normal !important;
 	}
 
+    .mixedSelectionModule__socialProofLine *,
 	.playableTile__mainHeading {
 		color: var(--primary-color) !important;
 		font-size: 14pt !important;
 		font-stretch: condensed;
 		font-weight: normal !important;
 	}
+    
+    .stationTile .sc-truncate.sc-text-light {
+        font-size: 14pt !important;
+        font-stretch: condensed !important;
+    }
 
 	.selectionModule__socialProofLine *,
 	.selectionPlaylistBanner__listArea * {
@@ -1490,6 +1508,12 @@
 		border-color: var(--primary-color) !important;
 	}
 
+    .systemPlaylistBannerItem * {
+        font-size: 14pt;
+        font-stretch: condensed;
+        font-weight: normal;
+    }
+    
 	/* USER */
 
 	/** DESCRIPTION : change the elements of the user page **/
@@ -2222,6 +2246,10 @@
 		text-transform: lowercase !important;
 	}
 
+    .sc-button-queue.addToNextUp * {
+        font-weight: bold !important;
+    }
+    
 	.l-listen-wrapper .l-about-row .sc-button-medium {
 		background: #212121;
 		border: none !important;
@@ -2254,7 +2282,7 @@
 	}
 
 	.l-listen-wrapper .l-about-row .sc-button-share {
-		background: #D4D4D4 !important;
+		background: #978F8F !important;
 	}
 
 	.l-listen-wrapper .l-about-row .sc-button-more,
@@ -2353,6 +2381,10 @@
 		text-transform: uppercase;
 	}
 
+    .l-listen-wrapper .sc-tag.sc-tag-medium * {
+        font-weight: bold !important;
+    }
+    
 	.soundTags.listenDetails__tags .sc-tag.sc-tag-medium * {
 		color: #FFF;
 		font-weight: bold !important;
@@ -2882,6 +2914,21 @@
 	.suggestedUserList__follow.sc-border-light-bottom {
 		border-bottom: 1px dotted #BEBEBE !important;
 	}
+    
+	.confirmableForm__text {
+		color: var(--primary-color) !important;
+		font-size: 14pt;
+		font-stretch: condensed;
+	}
+
+	.confirmableForm__actions button {
+		background: none;
+		border: none;
+		color: var(--primary-color) !important;;
+		font-size: 12pt;
+		font-stretch: condensed;
+		font-weight: bold !important;
+	}
 
 	.collection__oneRowSection {
 
@@ -2993,6 +3040,7 @@
 		font-weight: bold !important;
 		height: 34px !important;
 		width: 110px !important;
+        text-indent: 0px;
 		text-transform: uppercase !important;
 	}
 
