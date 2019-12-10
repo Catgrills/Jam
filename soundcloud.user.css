@@ -1729,6 +1729,7 @@
 		color: var(--secondary-color) !important;
 		font-size: 17pt !important;
 		font-stretch: condensed !important;
+		font-weight: normal !important;
 	}
 
 	.spotlight__recent.sc-border-light-top {
