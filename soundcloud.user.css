@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Jam
 @namespace      https://github.com/Catgrills/Jam
-@version        1.1.1
+@version        1.1.2
 @description    An user style for Soundcloud called Jam.
 @author         Catgrills/Katgrills
 @preprocessor 	uso
@@ -186,7 +186,11 @@
 	.tagsMain .tabs__tabs,
 	.textfield__clear,
 	.trackItem:not(.m-disabled).hover .trackItem__additional,
-	.trackItem:not(.m-disabled).active .trackItem__additional,.trackItem__additional,.truncatedAudioInfo__license,.truncatedUserDescription.m-overflow.m-collapsed .truncatedUserDescription__wrapper::after,.userMain .dropbar,.userMain__content .sound__footerRight {
+	.trackItem:not(.m-disabled).active .trackItem__additional,
+	.trackItem__additional,
+	.truncatedAudioInfo__license,
+	.truncatedUserDescription.m-overflow.m-collapsed .truncatedUserDescription__wrapper::after,.userMain .dropbar,
+	.userMain__content .sound__footerRight {
 		display: none !important;
 	}
 
@@ -1234,7 +1238,8 @@
 		font-weight: bold !important;
 		padding: 10px 12px 9px 12px !important;
 	}
-
+	
+   	.relativeTime span,
 	.searchList__item .soundTitle__tag *,
 	.soundList__item .soundTitle__tag.sc-tag.sc-tag-small * {
 		font-weight: bold !important;
@@ -2871,7 +2876,7 @@
 		border-bottom: none !important;
 		color: var(--primary-color);
 		font-family: "Roboto" !important;
-		font-size: 17pt !important;
+		font-size: 15pt !important;
 		font-stretch: condensed !important;
 		font-weight: normal !important;
 	}
