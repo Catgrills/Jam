@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Jam
 @namespace      https://github.com/Catgrills/Jam
-@version        1.1.2
+@version        1.1.3
 @description    An user style for Soundcloud called Jam.
 @author         Catgrills/Katgrills
 @preprocessor 	uso
@@ -143,6 +143,7 @@
 	.moreMenu__link[href*="blog"],
 	.paging-eof,
 	.premiumIconLink,
+    	.profileHeaderInfo__premiumIndicator,
 	.profileMenu__link::after,
 	.profileMenu__link.profileMenu__premium,
 	.queue__hide.sc-button.sc-button-nostyle.sc-ir,
@@ -239,6 +240,17 @@
 		font-stretch: condensed !important;
 	}
 
+	/* BUTTONS */
+
+	/** DESCRIPTION : change the elements of the buttons **/
+	.sc-button-large,
+    	.sc-button-toolbar > .sc-button {
+		font-size: 12pt !important;
+		font-stretch: condensed !important;
+		font-weight: bold;
+		text-transform: uppercase !important;
+	}
+
 	/* POPUP */
 
 	/** DESCRIPTION : change the elements of the popup page **/
@@ -250,6 +262,23 @@
 
 	.modal.modalWhiteout > .modal__closeButton {
 		filter: brightness(1) var(--invert) !important;
+	}
+	
+	.g-modal-title-h1.sc-truncate {
+
+		/*** POPUP HEADER ***/
+		border-color: var(--border-color);
+		color: var(--primary-color);
+		font-stretch: condensed;
+	}
+
+	.headerImageEditModal__hint,
+	.imageCrop__smallImage {
+
+		/*** POPUP BANNER ***/
+		color: var(--primary-color);
+		font-size: 14pt;
+		font-stretch: condensed;
 	}
 
 	.g-modal-section,
@@ -638,17 +667,15 @@
 	.autocompleteItem * {
 		font-size: 14pt !important;
 		font-stretch: condensed !important;
-		line-height: 16pt !important;
+		line-height: 18pt !important;
 	}
 
 	.autocompleteItem__title {
 		font-weight: normal !important;
 	}
 
-	.searchMenu__searchForText {
-		font-size: 14pt !important;
-		font-stretch: condensed !important;
-		font-weight: normal !important;
+	.searchMenu__searchFor {
+		display: none;
 	}
 
 	.autocompleteItem:last-child {
@@ -714,7 +741,7 @@
 	}
 
 	.profileMenu__link {
-		padding: 8px !important;
+		padding: 5px 0px !important;
 	}
 
 	.profileMenu__link:hover,
@@ -1529,7 +1556,7 @@
 		border-bottom: 1px solid var(--border-color) !important;
 		width: 100% !important;
 		position: fixed !important;
-		top: 46px !important;
+		top: 43px !important;
 		right: 0px !important;
 		left: 0px !important;
 		z-index: 999 !important;
@@ -1541,7 +1568,7 @@
 
 	.l-vertical-bar .userInfoBar .g-tabs {
 		border-bottom: none;
-		font-size: 17pt !important;
+		font-size: 15pt !important;
 		font-stretch: condensed !important;
 	}
 
@@ -1571,7 +1598,7 @@
 		text-indent: 0px !important;
 		text-transform: uppercase !important;
 		margin-right: 8px !important;
-		margin-bottom: -4px !important;
+		margin-bottom: -10px !important;
 	}
 
 	.l-vertical-bar .sc-button {
@@ -1642,6 +1669,7 @@
 		width: 100% !important;
 		margin: auto !important;
 		position: absolute !important;
+		margin-top: -3px !important;
 		left: 0px !important;
 		z-index: 999 !important;
 	}
@@ -1667,7 +1695,6 @@
 		font-size: 16pt;
 		font-stretch: condensed;
 		font-weight: normal !important;
-		padding: 10px 13px 13px 13px !important;
 		margin-bottom: 10px !important;
 	}
 
@@ -1814,7 +1841,7 @@
 	}
 
 	.userSidebar .sc-social-logo {
-		margin-top: 4px !important;
+		margin-top: 6px !important;
 	}
 
 	.userSidebar .commentBadgeList .commentBadgeList__item {
@@ -2633,7 +2660,7 @@
 		padding: 20px 20px 21px 20px !important;
 		width: 100% !important;
 		position: fixed !important;
-		top: 45px !important;
+		top: 42px !important;
 		right: 0px !important;
 		left: 0px !important;
 	}
@@ -2645,7 +2672,7 @@
 	.l-search .searchTitle .searchTitle__text {
 		border-bottom: none !important;
 		color: var(--primary-color);
-		font-size: 17pt !important;
+		font-size: 15pt !important;
 		font-stretch: condensed !important;
 		font-weight: normal !important;
 	}
@@ -2807,7 +2834,7 @@
 		border-bottom: 1px solid var(--border-color) !important;
 		padding: 15px 20px 19px 20px !important;
 		position: fixed !important;
-		top: 16px !important;
+		top: 15px !important;
 		right: 0px !important;
 		left: 0px !important;
 		z-index: 999 !important;
@@ -3138,6 +3165,13 @@
 		font-size: 14pt !important;
 		font-stretch: condensed !important;
 	}
+	
+	.readMoreTile__countWrapper {
+		background: var(--card-bg);
+		color: var(--primary-color) !important;
+		font-stretch: condensed !important;
+	}
+
 
 	/* UPLOAD */
 
