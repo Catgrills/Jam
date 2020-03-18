@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Jam
 @namespace      https://github.com/Catgrills/Jam
-@version        1.1.9
+@version        1.2.0
 @description    An user style for Soundcloud called Jam.
 @author         Catgrills/Katgrills
 @preprocessor 	uso
@@ -1767,7 +1767,8 @@
 	}
 
 	.spotlightTitle,
-	.spotlight__recent {
+	.spotlight__recent,
+	.userstream__header {
 		color: var(--secondary-color) !important;
 		font-size: 17pt !important;
 		font-stretch: condensed !important;
