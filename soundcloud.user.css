@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Jam
 @namespace      https://github.com/Catgrills/Jam
-@version        1.1.8
+@version        1.1.9
 @description    An user style for Soundcloud called Jam.
 @author         Catgrills/Katgrills
 @preprocessor 	uso
@@ -1175,7 +1175,7 @@
 	.soundList__item .sc-button-share,
 	.historicalPlays__item .sc-button-share,
 	.searchList__item .sc-button-share {
-		background: #D4D4D4 !important;
+		background: #B6AAAA !important;
 	}
 
 	.soundList__item .sc-button-more,
@@ -1649,7 +1649,7 @@
 	}
 
 	.l-vertical-bar .sc-button-more {
-		background: #D4D4D4 !important;
+		background: #B6AAAA !important;
 		border: 1px solid transparent;
 		color: #FFF;
 		padding-bottom: 8px !important;
