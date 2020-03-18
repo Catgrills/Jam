@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Jam
 @namespace      https://github.com/Catgrills/Jam
-@version        1.1.7
+@version        1.1.8
 @description    An user style for Soundcloud called Jam.
 @author         Catgrills/Katgrills
 @preprocessor 	uso
@@ -1104,7 +1104,7 @@
 
 	.soundTitle .soundTitle__title {
 		color: var(--primary-color) !important;
-		font-size: 16pt !important;
+		font-size: 14pt !important;
 		font-stretch: condensed !important;
 		min-height: 30px !important;
 		line-height: 25pt !important;
@@ -1270,6 +1270,10 @@
 		font-size: 12pt !important;
 		font-weight: bold !important;
 		padding: 10px 12px 9px 12px !important;
+	}
+	
+	.soundTitle__tagContent.sc-truncate {
+	    font-weight: bold !important;
 	}
 	
    	.relativeTime span,
