@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Jam
 @namespace      https://github.com/Catgrills/Jam
-@version        1.2.1
+@version        1.2.
 @description    An user style for Soundcloud called Jam.
 @author         Catgrills/Katgrills
 @preprocessor 	uso
@@ -527,7 +527,7 @@
 	}
 
 	.queue__panel * {
-		font-size: 17pt !important;
+		font-size: 15pt !important;
 		font-stretch: condensed;
 		font-weight: normal;
 	}
@@ -538,12 +538,13 @@
 		border-radius: 2px !important;
 		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
 		color: #FFF !important;
-		font-size: 14pt !important;
+		font-size: 12pt !important;
 		font-stretch: condensed !important;
 		font-weight: bold !important;
 		height: 34px !important;
 		width: auto !important;
 		padding-right: 15px !important;
+		padding-bottom: 4px !important;
 		padding-left: 15px !important;
 		text-transform: uppercase !important;
 		margin-top: -1px !important;
