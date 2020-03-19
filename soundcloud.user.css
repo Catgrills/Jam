@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Jam
 @namespace      https://github.com/Catgrills/Jam
-@version        1.2.0
+@version        1.2.1
 @description    An user style for Soundcloud called Jam.
 @author         Catgrills/Katgrills
 @preprocessor 	uso
@@ -915,7 +915,7 @@
 	}
 
 	.playbackSoundBadge__titleContextContainer a {
-		font-size: 14pt !important;
+		font-size: 12pt !important;
 		font-stretch: condensed !important;
 		max-width: 100% !important;
 		overflow: hidden !important;
